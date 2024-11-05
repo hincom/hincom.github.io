@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #layout {
+        width: 100%;
+        height: 100vh;
+      }
+
+      #test-editormd {
+        width: 100%;
+        height: calc(100% - 20px);
+        /* Adjust based on any other elements like headers */
+      }
+    </style>
     <meta charset="utf-8" />
     <title>自定义markdown编辑器- Editor.md examples</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/editor.md@1.5.0/css/editormd.min.css">
@@ -79,13 +98,11 @@
           downloadBlob(n, "markdown.html", "text/plain;charset=utf-8;")
         }
         var testEditor = editormd("test-editormd", {
-          width: "100%",
-          height: 640,
           path: 'https://cdn.jsdelivr.net/npm/editor.md@1.5.0/lib/',
           watch: true,
           saveHTMLToTextarea: true,
           onload: function() {
-            this.fullscreen();
+            //this.fullscreen();
             var t = {
               "Ctrl-S": function() {
                 n()
