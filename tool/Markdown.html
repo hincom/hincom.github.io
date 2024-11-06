@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh">
   <head>
@@ -97,10 +98,22 @@
           var n = getHTMLOutput();
           downloadBlob(n, "markdown.html", "text/plain;charset=utf-8;")
         }
+               // 从 localStorage 加载已保存的 Markdown 内容
+        function loadMarkdown() {
+            var savedMarkdown = localStorage.getItem('markdown');
+            if (savedMarkdown) {
+                testEditor.setMarkdown(savedMarkdown); // 设置已保存的 Markdown 内容
+            }
+        }
         var testEditor = editormd("test-editormd", {
           path: 'https://cdn.jsdelivr.net/npm/editor.md@1.5.0/lib/',
           watch: true,
           saveHTMLToTextarea: true,
+                      // 保存代码到 localStorage
+            onchange: function() {
+                var markdownContent = testEditor.getMarkdown();
+                localStorage.setItem('markdown', markdownContent);
+            },
           onload: function() {
             //this.fullscreen();
             var t = {
@@ -108,7 +121,10 @@
                 n()
               }
             };
-            this.addKeyMap(t)
+            // 页面加载时调用
+        loadMarkdown();
+            this.addKeyMap(t);
+            
           },
           toolbarIcons: function() {
             return ["undo", "redo", "|", "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|", "h1", "h2", "h3", "h4", "h5", "h6", "|", "list-ul", "list-ol", "hr", "|", "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "html-entities", "pagebreak", "|", "goto-line", "watch", "preview", "fullscreen", "clear", "search", "|", "help", "info", "|", "save", "HTML2MD", "HTMLCode"]
@@ -136,6 +152,7 @@
               HTMLCode: "查看 HTML 代码"
             }
           }
+          
         });
       });
     </script>
