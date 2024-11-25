@@ -53,7 +53,7 @@
       links:
         - title: 自制 Markdown 在线编辑器
           logo: /assets/images/logos/producthunt.png
-          url: https://hincom.github.io/tool/Markdown.html/
+          url: https://hincom.github.io/tool/Markdown.html
           description: HTML2MD与格式化、本地保存
         - title: 开源Editor.md
           logo: /assets/images/logos/NEXT.png
