@@ -15,7 +15,7 @@
       description: 一键抠图
     - title: 白描OCR
       logo: /assets/images/logos/zcool.png
-      url: http://web.baimiaopp/com
+      url: http://web.baimiaopp.com
       description: 白描网页版
 - name: AI对话
   icon: fa-solid fa-arrow-right
