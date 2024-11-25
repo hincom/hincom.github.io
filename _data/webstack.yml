@@ -1,5 +1,5 @@
 - name: 图像相关
-  icon: linecons-star
+  icon: fa-solid fa-arrow-right
   links:
     - title: Photopea
       logo: /assets/images/logos/dribbble.png
@@ -18,7 +18,7 @@
       url: http://web.baimiaopp/com
       description: 白描网页版
 - name: AI对话
-  icon: linecons-doc
+  icon: fa-solid fa-arrow-right
   links:
     - title: 在问
       logo: /assets/images/logos/leiphone.png
@@ -33,7 +33,7 @@
       url: https://chat10.free2gpt.xyz/
       description: 打开即用 完全免费 无需魔法 无需登录 服务稳定 界面简洁 有额度
 - name: 开发工具
-  icon: linecons-lightbulb
+  icon: fa-solid fa-arrow-right
   sub:
     - name: 网页开发
       links:
@@ -104,7 +104,7 @@
           url: https://www.sojson.com/dwz/batch.html
           description: 短网址(u3v.cn)批量生成
 - name: 源阅读
-  icon: linecons-doc
+  icon: fa-solid fa-arrow-right
   links:
     - title: 自制源阅读编辑器
       logo: /assets/images/logos/leiphone.png
