@@ -1,6 +1,6 @@
 - name: 图像相关
   icon: linecons-star
-  links: 
+  links:
     - title: Photopea
       logo: /assets/images/logos/dribbble.png
       url: https://www.photopea.com/
@@ -17,12 +17,9 @@
       logo: /assets/images/logos/zcool.png
       url: http://web.baimiaopp/com
       description: 白描网页版
-    
-    
-
 - name: AI对话
   icon: linecons-doc
-  links: 
+  links:
     - title: 在问
       logo: /assets/images/logos/leiphone.png
       url: https://zaiwen.xueban.org.cn/chat/working-edition
@@ -35,11 +32,9 @@
       logo: /assets/images/logos/digitaling.png
       url: https://chat10.free2gpt.xyz/
       description: 打开即用 完全免费 无需魔法 无需登录 服务稳定 界面简洁 有额度
-    
-
 - name: 开发工具
   icon: linecons-lightbulb
-  sub: 
+  sub:
     - name: 网页开发
       links:
         - title: 菜鸟工具-HTML
@@ -53,8 +48,7 @@
         - title: HTML运行与美化
           logo: /assets/images/logos/Pttrns.png
           url: https://codebeautify.org/htmlviewer
-          description: HTML运行与美化  
-      
+          description: HTML运行与美化
     - name: Markdown
       links:
         - title: 自制 Markdown 在线编辑器
@@ -81,7 +75,6 @@
           logo: /assets/images/logos/appinn.png
           url: https://faxian.appinn.com/
           description: 在这里发现更多有趣的应用
-
     - name: HTML2MD
       links:
         - title: Helloworld-HTML2MD
@@ -91,28 +84,28 @@
         - title: HTML 转 Markdown 工具
           logo: /assets/images/logos/Pttrns.png
           url: https://devtool.tech/html-md
-          description: HTML转Markdown工具，也能通过网址直接生成 
+          description: HTML转Markdown工具，也能通过网址直接生成
         - title: 自定义样式的 Markdown 编辑器
           logo: /assets/images/logos/Pttrns.png
-          url: https://md.weiyan.cc/ 
+          url: https://md.weiyan.cc/
           description: 支持自定义样式的 Markdown 编辑器，支持导出 pdf 和 markdown
-    
-      
-  
     - name: 其他工具
       links:
         - title: 正则测试
           logo: /assets/images/logos/Pttrns.png
           url: https://regexr-cn.com/
           description: 学习、构建 和 测试 正则表达式
+        - title: YAML美化和格式化
+          logo: /assets/images/logos/Pttrns.png
+          url: https://www.ol-tools.com/yaml-viewer
+          description: YAML美化和格式化
         - title: 短网址u3v
           logo: /assets/images/logos/Pttrns.png
           url: https://www.sojson.com/dwz/batch.html
           description: 短网址(u3v.cn)批量生成
-      
 - name: 源阅读
   icon: linecons-doc
-  links: 
+  links:
     - title: 自制源阅读编辑器
       logo: /assets/images/logos/leiphone.png
       url: https://hintryer.github.io/tool/yuedu.html
@@ -120,8 +113,8 @@
     - title: 猫公子源
       logo: /assets/images/logos/leiphone.png
       url: https://yuedu.miaogongzi.net/gx.html
-      description:猫公子源
+      description: 猫公子源
     - title: 源仓库
       logo: /assets/images/logos/leiphone.png
       url: https://www.yckceo.com/yuedu/shuyuan/index.html
-      description:源仓库      
+      description: 源仓库
