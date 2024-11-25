@@ -71,10 +71,7 @@
           logo: /assets/images/logos/today.png
           url: https://www.toolhelper.cn/Code/Markdown
           description: 引用Editor.md开源模块，添加保存功能
-        - title: 小众软件
-          logo: /assets/images/logos/appinn.png
-          url: https://faxian.appinn.com/
-          description: 在这里发现更多有趣的应用
+
     - name: HTML2MD
       links:
         - title: Helloworld-HTML2MD
