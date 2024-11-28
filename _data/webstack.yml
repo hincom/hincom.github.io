@@ -96,6 +96,16 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://ico.kucat.cn/
           description:  用Api接口来获取网站的ico图标，可用于美化网站外链显示效果！
+    - name: 填色图片
+      links:
+        - title: Colorfino
+          logo: /assets/images/logos/Pttrns.png
+          url: https://colorfino.com/zh/
+          description:  网络上最好的免费填色图片
+        - title: 照片变身涂色页
+          logo: /assets/images/logos/Pttrns.png
+          url: https://portraitart.app/cn/photo-to-coloring-page
+          description:  照片变身涂色页，创意无限尽情画！
     - name: 其他工具
       links:
         - title: 正则测试
