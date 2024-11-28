@@ -71,7 +71,6 @@
           logo: /assets/images/logos/today.png
           url: https://www.toolhelper.cn/Code/Markdown
           description: 引用Editor.md开源模块，添加保存功能
-
     - name: HTML2MD
       links:
         - title: Helloworld-HTML2MD
@@ -86,21 +85,15 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://md.weiyan.cc/
           description: 支持自定义样式的 Markdown 编辑器，支持导出 pdf 和 markdown
+    
     - name: 图标素材
       links:
         - title: Font Awesome
           logo: /assets/images/logos/Pttrns.png
-          url: https://fontawesome.com/
-          description: 包含了一系列矢量图标，可以轻松地通过 CSS 进行调用和使用，它可以被定制大小、颜色、阴影等
-        - title: YAML美化和格式化
-          logo: /assets/images/logos/Pttrns.png
-          url: https://www.ol-tools.com/yaml-viewer
-          description: YAML美化和格式化
-        - title: 短网址u3v
-          logo: /assets/images/logos/Pttrns.png
-          url: https://www.sojson.com/dwz/batch.html
-          description: 短网址(u3v.cn)批量生成
-      - name: 其他工具
+          url: https://fontawesome.com
+          description:  包含了一系列矢量图标，可以轻松地通过 CSS 进行调用和使用，它可以被定制大小、颜色、阴影等
+      
+    - name: 其他工具
       links:
         - title: 正则测试
           logo: /assets/images/logos/Pttrns.png
