@@ -92,7 +92,10 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://fontawesome.com
           description:  包含了一系列矢量图标，可以轻松地通过 CSS 进行调用和使用，它可以被定制大小、颜色、阴影等
-      
+        - title: 酷猫网络
+          logo: /assets/images/logos/Pttrns.png
+          url: https://ico.kucat.cn/
+          description:  用Api接口来获取网站的ico图标，可用于美化网站外链显示效果！
     - name: 其他工具
       links:
         - title: 正则测试
