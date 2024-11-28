@@ -16,7 +16,7 @@
     - title: 白描OCR
       logo: /assets/images/logos/zcool.png
       url: https://web.baimiaoapp.com/
-      description: 白描网页版
+      description: 图片转文字 - 图片转Excel表格 - PDF转Word - 白描网页版
 - name: AI对话
   icon: fa-solid fa-arrow-right
   links:
