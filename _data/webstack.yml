@@ -1,22 +1,3 @@
-- name: 图像相关
-  icon: fa-regular fa-image
-  links:
-    - title: Photopea
-      logo: /assets/images/logos/dribbble.png
-      url: https://www.photopea.com/
-      description: 在线Photoshop工具，无需注册登录。
-    - title: uupoop
-      logo: /assets/images/logos/behance.png
-      url: https://www.uupoop.com/
-      description: 国内版的「Photopea」。下载需要注册
-    - title: 一键抠图
-      logo: /assets/images/logos/uicn.png
-      url: https://www.remove.bg/zh
-      description: remove.bg在线抠图软件轻松实现一键抠图。
-    - title: 白描OCR
-      logo: /assets/images/logos/zcool.png
-      url: https://web.baimiaoapp.com/
-      description: 图片转文字 - 图片转Excel表格 - PDF转Word - 白描网页版
 - name: AI对话
   icon: fa-solid fa-arrow-right
   links:
@@ -85,31 +66,6 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://md.weiyan.cc/
           description: 支持自定义样式的 Markdown 编辑器，支持导出 pdf 和 markdown
-    
-    - name: 图标素材
-      links:
-        - title: Font Awesome
-          logo: /assets/images/logos/Pttrns.png
-          url: https://fontawesome.com
-          description:  包含了一系列矢量图标，可以轻松地通过 CSS 进行调用和使用，它可以被定制大小、颜色、阴影等
-        - title: 酷猫网络
-          logo: /assets/images/logos/Pttrns.png
-          url: https://ico.kucat.cn/
-          description:  用Api接口来获取网站的ico图标，可用于美化网站外链显示效果！
-    - name: 填色图片
-      links:
-        - title: Colorfino
-          logo: /assets/images/logos/Pttrns.png
-          url: https://colorfino.com/zh/
-          description:  网络上最好的免费填色图片
-        - title: portraitart
-          logo: /assets/images/logos/Pttrns.png
-          url: https://portraitart.app/cn/photo-to-coloring-page
-          description:  照片变身涂色页，创意无限尽情画！
-        - title: coloringbook
-          logo: /assets/images/logos/Pttrns.png
-          url: https://www.coloringbook.ai/zh
-          description:  AI 填色 书生成器，免费填色书下载
     - name: 其他工具
       links:
         - title: 正则测试
@@ -124,6 +80,59 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://www.sojson.com/dwz/batch.html
           description: 短网址(u3v.cn)批量生成
+- name: 图像相关
+  icon: fa-regular fa-image
+  sub:
+    - name: 图像编辑
+      links:
+        - title: Photopea
+          logo: /assets/images/logos/dribbble.png
+          url: https://www.photopea.com/
+          description: 在线Photoshop工具，无需注册登录。
+        - title: uupoop
+          logo: /assets/images/logos/behance.png
+          url: https://www.uupoop.com/
+          description: 国内版的「Photopea」。下载需要注册
+        - title: 一键抠图
+          logo: /assets/images/logos/uicn.png
+          url: https://www.remove.bg/zh
+          description: remove.bg在线抠图软件轻松实现一键抠图。
+        - title: 白描OCR
+          logo: /assets/images/logos/zcool.png
+          url: https://web.baimiaoapp.com/
+          description: 图片转文字 - 图片转Excel表格 - PDF转Word - 白描网页版
+    - name: 图标素材
+      links:
+        - title: Font Awesome
+          logo: /assets/images/logos/Pttrns.png
+          url: https://fontawesome.com
+          description: 包含了一系列矢量图标，可以轻松地通过 CSS 进行调用和使用，它可以被定制大小、颜色、阴影等
+        - title: 酷猫网络
+          logo: /assets/images/logos/Pttrns.png
+          url: https://ico.kucat.cn/
+          description: 用Api接口来获取网站的ico图标，可用于美化网站外链显示效果！
+    - name: 填色图片
+      links:
+        - title: Colorfino
+          logo: /assets/images/logos/Pttrns.png
+          url: https://colorfino.com/zh/
+          description: 网络上最好的免费填色图片
+        - title: portraitart
+          logo: /assets/images/logos/Pttrns.png
+          url: https://portraitart.app/cn/photo-to-coloring-page
+          description: 照片变身涂色页，创意无限尽情画！
+        - title: 图片转线稿 - 卢浮宫生成器
+          logo: /assets/images/logos/Pttrns.png
+          url: http://www.atoolbox.net/Tool.php?Id=1099
+          description: 可以生成线稿图风格的图片的在线工具
+        - title: 线稿图生成器
+          logo: /assets/images/logos/Pttrns.png
+          url: http://www.atoolbox.net/Tool.php?Id=1099
+          description: 可以生成线稿图风格的图片的在线工具
+        - title: 铅笔素描您的照片
+          logo: /assets/images/logos/Pttrns.png
+          url: http://www.atoolbox.net/Tool.php?Id=1099
+          description: 将您的照片制作成铅笔素描
 - name: 源阅读
   icon: fa-solid fa-book-open
   links:
