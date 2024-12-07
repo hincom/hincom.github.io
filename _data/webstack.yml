@@ -80,6 +80,21 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://www.sojson.com/dwz/batch.html
           description: 短网址(u3v.cn)批量生成
+- name: 软件博客
+  icon: fa-solid fa-book-open
+  links:
+    - title: zd423
+      logo: /assets/images/logos/leiphone.png
+      url: https://www.423down.com
+      description: zd423
+    - title: 乐享网
+      logo: /assets/images/logos/leiphone.png
+      url: https://www.lxapk.com/
+      description: 专注于手机应用分享网站，有大师兄影视去广告版
+    - title: th-sjy
+      logo: /assets/images/logos/leiphone.png
+      url: http://www.th-sjy.com/
+      description: th_sjy 专注软件汉化和资源分享
 - name: 图像相关
   icon: fa-regular fa-image
   sub:
