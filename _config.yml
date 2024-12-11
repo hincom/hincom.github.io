@@ -1,1 +1,6 @@
-
+defaults:
+  -
+    scope:
+      path: "" # 一个空字符串表示作用于所有文件
+    values:
+      layout: "custom_layout" # 默认布局
