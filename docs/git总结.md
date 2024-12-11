@@ -1,7 +1,5 @@
 ---
-layout: custom
 title: 'git总结'
-date: 2024-10-24 13:20:39 +0800
 ---
 
 ## 总结
