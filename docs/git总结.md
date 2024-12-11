@@ -1,4 +1,4 @@
-## g总结林顶戴
+## 总结
 
 ```javascript
 git init
