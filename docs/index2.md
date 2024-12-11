@@ -1,5 +1,5 @@
 ---
-layout: custom_layout
+layout: default
 title: 目录
 ---
 
