@@ -1,5 +1,5 @@
 ---
-layout: custom
+layout: custom_layout
 title: 生成 SSH 公钥
 ---
 
