@@ -1,7 +1,3 @@
----
-title: 'git总结'
----
-
 ## 总结
 
 ```javascript
