@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <title>{{ page.title }} - My Site</title>
 </head>
@@ -9,7 +9,7 @@
       <ul>
         {% for page in site.pages %}
           {% if page.path contains 'docs/' %}
-            <li><a href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a></li>
+            <li><a href="{{ page.url | relative_url }}">{{ page.title | default: page.path | split: '/' | last | split: '.' | first }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
