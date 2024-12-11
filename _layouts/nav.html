@@ -9,7 +9,7 @@
       <ul>
         {% for page in site.pages %}
           {% if page.path contains 'docs/' %}
-            <li><a href="{{ page.path | relative_url }}">{{ page.name}}</a></li>
+            <li><a href="{{ page.path | relative_url }}">{{ page.name| split: '.' | first}}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
