@@ -71,8 +71,8 @@ li {
   background: yellow;
 }
 
-.w {
-  max-width: 640px;
+.page-content {
+  max-width: 840px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -103,8 +103,8 @@ td {
 }
 
 code {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 div.highlighter-rouge code {
