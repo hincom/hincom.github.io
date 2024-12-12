@@ -1,3 +1,7 @@
+---
+layout: nostyle
+---
+
 ## 总结
 
 ```javascript
