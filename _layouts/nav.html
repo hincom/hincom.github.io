@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="导航到网站中的各个文档和页面">
-    <meta name="keywords" content="导航,文档,网站,页面">
     <title>导航 - My Site</title>
     <link rel="icon" type="image/png" href="/path/to/your/favicon.png">
     <base target="_blank">
-    
+    <style>
+      body {
+        margin: 50px;
+        font-size: 18px;
+      }
+
+      li {
+        margin: 8px;
+      }
+    </style>
   </head>
   <body>
-      <nav>
-        <ul> {% for page in site.pages %} {% if page.path contains 'docs/' %} <li>
-            <a href="{{ page.url | relative_url }}">{{page.path | split: '/' | last | remove: '.md'}}</a>
-          </li> {% endif %} {% endfor %} </ul>
-      </nav>
+    <nav>
+      <ul> {% for page in site.pages %} {% if page.path contains 'docs/' %} <li>
+          <a href="{{ page.url | relative_url }}">{{page.path | split: '/' | last | remove: '.md'}}</a>
+        </li> {% endif %} {% endfor %} </ul>
+    </nav>
   </body>
 </html>
