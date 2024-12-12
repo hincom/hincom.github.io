@@ -14,6 +14,7 @@
 <script src="https://cdn.jsdelivr.net/gh/hintryer/cdn/top.js"></script>
   <title>
     {{ page.title }}
+   {{ page.path | split: '/' | last | remove: '.md'}}
   </title>
 </head>
 <body>
