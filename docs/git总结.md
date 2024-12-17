@@ -136,7 +136,6 @@ git reset HEAD .
 
 ```
 git restore --staged <file>
-
 ```
   
 
@@ -144,7 +143,6 @@ git restore --staged <file>
 
 ```
 git restore --staged .
-
 ```
   
 
@@ -155,7 +153,6 @@ git restore --staged .
 
 ```
 rm .git/index
-
 ```
 
 ### 提交 commit-记录
