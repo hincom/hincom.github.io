@@ -57,7 +57,7 @@ Initialized empty Git repository in /Users/michael/learngit/.git/
 创建完多出了一个被隐藏的.git 目录，这就是本地仓库 Git 的工作场所，而且是一个空的仓库（empty Git repository）。没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。
 
 - 另一种是克隆远程仓库：`git clone [url]`
-  克隆远程仓库，如在 github 上创建的仓库“`https://github.com/kwonganding/KWebNote.git`”
+克隆远程仓库，如在 github 上创建的仓库“`https://github.com/kwonganding/KWebNote.git`”
 
 ```
 $ git clone 'https://github.com/kwonganding/KWebNote.git'
@@ -89,65 +89,53 @@ $ git add .
 | git rm \[file\] | 删除工作区文件，并且将这次删除放入暂存区 |
 |git rm --cached [file]|删除放入暂存区 ，但该文件会保留在工作区|
 
- 
+#### 暂存区删除
 
-#### ​暂存区删除
+把文件从暂存区中删除（或者叫撤销，即撤销add），并不会删除文件，在本地文件夹（工作区）里还能找到，撤销后的文件状态是未被暂存的状态（unstaged）。
 
-把文件从暂存区中删除（或者叫撤销，即撤销add），并不会删除文件，在本地文件夹（工作区）里还能找到，撤销后的文件状态是未被暂存的状态（unstaged）。  
-
-方法一：使用 git rm 命令 删除暂存区指定文件
+-  方法一：使用 git rm 命令 删除暂存区指定文件
 
 ```
 git rm --cached <file>
-
 ```
 
-将暂存区中的内容删除，工作区中对应的文件并不会受到影响。  
-  
+将暂存区中的内容删除，工作区中对应的文件并不会受到影响。
 
-方法二：使用 git reset HEAD 命令 撤销已被放入暂存区的文件
-----------------------------------------------------------------------------------------------------
+- 方法二：使用 git reset HEAD 命令 撤销已被放入暂存区的文件
 
-撤销暂存区的修改（unstaged），重新放回工作区。  
-  
+撤销暂存区的修改（unstaged），重新放回工作区。
 
 **撤销暂存区指定文件**（取消某一个文件的缓存）
 
 ```
 git reset HEAD <file>
 ```
-  
 
 **撤销暂存区所有文件**（取消 git add 缓存的所有内容）
 
 ```
 git reset HEAD .
 ```
-  
-方法三：使用 git restore 命令
-------------------------------------------------------------------------------------
+- 方法三：使用 git restore 命令
 
 使用 git restore 命令可以取消 Git 暂存（即取消已经添加到暂存区的文件），此命令将会将文件从暂存区移除，但保留在工作区中。
 
-注意：git restore命令仅适用于 Git 2.23 版本以上的版本。  
-  
+注意：git restore命令仅适用于 Git 2.23 版本以上的版本。
+
 
 **取消某一个文件的暂存**
 
 ```
 git restore --staged <file>
 ```
-  
 
 **取消所有已暂存的文件**
 
 ```
 git restore --staged .
 ```
-  
 
-方法四：清空暂存区
-------------------------------------------------------------------------
+- 方法四：清空暂存区
 
 所谓暂存区实质是.git目录下的index文件（索引），只要将此文件删除，那么就可以认为暂存区被清空。
 
@@ -213,27 +201,27 @@ git pull --rebase origin master
 git push -u origin master
 ```
 
-| **远程仓库指令**                    | **描述**                                                           |
+| **远程仓库指令**| **描述** |
 | ----------------------------------- | ------------------------------------------------------------------ |
-| git clone \[git 地址\]              | 从远程仓库克隆到本地（当前目录）                                   |
-| git remote -v                       | 查看所有远程仓库，不带参数`-v`只显示名称                           |
-| git remote show \[remote\]          | 显示某个远程仓库的信息                                             |
-| **git remote add \[name\] \[url\]** | 增加一个新的远程仓库，并命名                                       |
-| git remote rename \[old\] \[new\]   | 修改远程仓库名称                                                   |
-| **git pull \[remote\] \[branch\]**  | 取回远程仓库的变化，并与本地版本合并                               |
-| **git pull**                        | 同上，针对当前分支                                                 |
-| git fetch \[remote\]                | 获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并       |
-| **git push**                        | 推送当前分支到远程仓库                                             |
-| git push \[remote\] \[branch\]      | 推送本地当前分支到远程仓库的指定分支                               |
-| git push \[remote\] --force/-f      | 强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！                |
-| git push \[remote\] --all           | 推送所有分支到远程仓库                                             |
-| git push –u                         | 参数`–u`表示与远程分支建立关联，第一次执行的时候用，后面就不需要了 |
-| git remote rm \[remote-name\]       | 删除远程仓库                                                       |
-| git pull --rebase                   | 使用 rebase 的模式进行合并                                         |
+| git clone \[git 地址\]| 从远程仓库克隆到本地（当前目录） |
+| git remote -v | 查看所有远程仓库，不带参数`-v`只显示名称 |
+| git remote show \[remote\]| 显示某个远程仓库的信息 |
+| **git remote add \[name\] \[url\]** | 增加一个新的远程仓库，并命名 |
+| git remote rename \[old\] \[new\] | 修改远程仓库名称 |
+| **git pull \[remote\] \[branch\]**| 取回远程仓库的变化，并与本地版本合并 |
+| **git pull**| 同上，针对当前分支 |
+| git fetch \[remote\]| 获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并 |
+| **git push**| 推送当前分支到远程仓库 |
+| git push \[remote\] \[branch\]| 推送本地当前分支到远程仓库的指定分支 |
+| git push \[remote\] --force/-f| 强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！|
+| git push \[remote\] --all | 推送所有分支到远程仓库 |
+| git push –u | 参数`–u`表示与远程分支建立关联，第一次执行的时候用，后面就不需要了 |
+| git remote rm \[remote-name\] | 删除远程仓库 |
+| git pull --rebase | 使用 rebase 的模式进行合并 |
 
-# 错误
+## 错误
 
-## git init 报错
+### git init 报错
 
 当我们在一个目录下初始化 git 时 可能会出现这个报错，
 
@@ -244,12 +232,12 @@ hint: Using 'master' as the name for the initial branch. This default branch nam
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
 hint:
-hint:   git config --global init.defaultBranch <name>
+hint: git config --global init.defaultBranch <name>
 hint:
 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
 hint: 'development'. The just-created branch can be renamed via this command:
 hint:
-hint:   git branch -m <name>
+hint: git branch -m <name>
 Initialized empty Git repository in /tmp/new/.git/
 ```
 
@@ -259,7 +247,7 @@ Initialized empty Git repository in /tmp/new/.git/
 git config --global init.defaultBranch master
 ```
 
-## git add .报错
+### git add .报错
 
 git add .报错 `warning: adding embedded git repository\:xxxxxxxxxx`
 
@@ -277,7 +265,7 @@ hint:
 hint: If you added this path by mistake, you can remove it from the
 hint: index with:
 hint:
-hint: git rm --cached   xxxx
+hint: git rm --cached xxxx
 hint:
 hint: See "git help submodule" for more information.
 ```
@@ -286,7 +274,7 @@ hint: See "git help submodule" for more information.
 
 **解决：** 删除子文件夹的.git 文件， 重新执行`git add .`
 
-## `git remote add`时报错：
+### `git remote add`时报错：
 
 ```
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
@@ -308,9 +296,9 @@ git remote rm origin
 git remote add origin 仓库地址
 ```
 
-## git 上传报错
+### git 上传报错
 
-### 第一个问题
+#### 第一个问题
 
 上传步骤：\
 `git add .`\
@@ -324,7 +312,7 @@ git remote add origin 仓库地址
 
 `git pull --rebase origin master`
 
-### 第二个问题
+#### 第二个问题
 
 `! [remote rejected] master -> master (pre-receive hook declined)`
 
@@ -332,12 +320,12 @@ git remote add origin 仓库地址
 
 [解决办法的文章](https://www.cnblogs.com/cppeterpan/p/7289266.html)
 
-## git push 报错
+### git push 报错
 
 gitee 第一次提交代码提交不上去，到 push 这一步老是遇到
 
 ```javascript
-  ! \[remote rejected\] master -> master (hook declined)
+! \[remote rejected\] master -> master (hook declined)
 error: failed to push some refs to
 ```
 
