@@ -112,6 +112,10 @@
           logo: /assets/images/logos/uicn.png
           url: https://www.remove.bg/zh
           description: remove.bg在线抠图软件轻松实现一键抠图。
+        - title: 一键抠图
+          logo: /assets/images/logos/uicn.png
+          url: https://www.koukoutu.com/removebgtool/all
+          description: 在线实现一键抠图。
         - title: 白描OCR
           logo: /assets/images/logos/zcool.png
           url: https://web.baimiaoapp.com/
