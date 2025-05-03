@@ -140,18 +140,10 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://colorfino.com/zh/
           description: 网络上最好的免费填色图片
-        - title: 图片转线稿 - 卢浮宫生成器
+        - title: 豆包AI
           logo: /assets/images/logos/Pttrns.png
-          url: http://www.atoolbox.net/Tool.php?Id=1099
-          description: 可以生成线稿图风格的图片的在线工具
-        - title: 线稿图生成器
-          logo: /assets/images/logos/Pttrns.png
-          url: http://www.atoolbox.net/Tool.php?Id=1099
-          description: 可以生成线稿图风格的图片的在线工具
-        - title: 铅笔素描您的照片
-          logo: /assets/images/logos/Pttrns.png
-          url: http://www.atoolbox.net/Tool.php?Id=1099
-          description: 将您的照片制作成铅笔素描
+          url: https://www.doubao.com/chat/create-image
+          description: 点击参考图上传图片，输入"转换为黑白线稿风格，保持元素不变"
 - name: 源阅读
   icon: fa-solid fa-book-open
   links:
