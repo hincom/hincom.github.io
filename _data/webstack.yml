@@ -80,6 +80,10 @@
           logo: /assets/images/logos/Pttrns.png
           url: https://www.sojson.com/dwz/batch.html
           description: 短网址(u3v.cn)批量生成
+        - title: 阴历转阳历ICS生成器
+          logo: /assets/images/logos/Pttrns.png
+          url: /tool/ics.html
+          description: 阴历转阳历ICS生成器
 - name: 软件博客
   icon: fa-solid fa-book-open
   links:
