@@ -13,6 +13,10 @@
       logo: /assets/images/logos/digitaling.png
       url: https://chat10.free2gpt.xyz/
       description: 打开即用 完全免费 无需魔法 无需登录 服务稳定 界面简洁 有额度
+    - title: MD
+      logo: /assets/images/logos/digitaling.png
+      url: /docs/index.md
+      description: 打开即用 完全免费 无需魔法 无需登录 服务稳定 界面简洁 有额度
 - name: 开发工具
   icon: fa-solid fa-screwdriver-wrench
   sub:
