@@ -1,913 +1,569 @@
-<html xmlns=http://www.w3.org/1999/xhtml>
-  <!--
+
+<html xmlns=http://www.w3.org/1999/xhtml><!--
  Page saved with SingleFile 
  url: https://px.hebnx.com/Train/train/exam/examination_timing/cc6e589e54cb47c6b72cee14d9e22a5c 
- saved date: Thu Jul 10 2025 12:26:04 GMT+0800 (中国标准时间)
--->
-  <meta charset=utf-8>
-  <title>正在考试</title>
-  <style>
-    :root {
-      --sf-img-2: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMEVDQTlCQzM0MkUxMUU2OTBDNUE4NjlBMjk4QzVFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMEVDQTlCRDM0MkUxMUU2OTBDNUE4NjlBMjk4QzVFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQwRUNBOUJBMzQyRTExRTY5MEM1QTg2OUEyOThDNUUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQwRUNBOUJCMzQyRTExRTY5MEM1QTg2OUEyOThDNUUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+XToCwwAAAMtJREFUeNpi/P//PwMU3AdiBQYEmA7ET6H0OwYcgAmJrYBF3hKIDwOxDDEG4AJaQHwEiDXINQAE5KEuMSXFAHGozfeg+BMQzwFiXWRFLHgMCADil0DciSbOj8IDxQIUEwumIekhOgxg4C8QPyInEGEgE4j/ALEQuQY8A+JuaPogywCy08EDIPaG0iDACMTCYAZSXviPx4BWIDaHJihVIL4FNUAEORqf4Ym680DsAcRfoPx/QJwMthw5TonAdkD8GohTYWLIXiALAAQYAEQRx41zSOTkAAAAAElFTkSuQmCC");
-      --sf-img-3: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDOUZBRDFEODM0MkUxMUU2Qjc1QkE1M0M0NjE3RjkxMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDOUZBRDFEOTM0MkUxMUU2Qjc1QkE1M0M0NjE3RjkxMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM5RkFEMUQ2MzQyRTExRTZCNzVCQTUzQzQ2MTdGOTEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM5RkFEMUQ3MzQyRTExRTZCNzVCQTUzQzQ2MTdGOTEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MCFISQAAANJJREFUeNpi/P//PwMU3AdiBQYEmA7ET6H0OwYcgAmJrYBF3hKIDwOxDDEG4AJaQHwEiDXINQAE5KEuMSXFAHGozfeg+BMQzwFiXWRFLHgMCADil0DciSbOj8IDxQIUEwumIekhOgxg4C8QPyInEEHgOxAHAvFvIBYj1Qs/gdgXiLdC+VeAWAycCIk0YCIQLwDif1A+iL4A0sdCpPNBUboZiI8B8UwgriUnFo4AsQ2U7Y0tFp4TcIU1RhpAS0hSRHhFAIjfAvFrmAAjUnYmCwAEGAByHgifftNg6gAAAABJRU5ErkJggg==");
-      --sf-img-7: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MERCMTgzODM0MjgxMUU2OEQxQkVEMUFDRjAxRDY4NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4MERCMTgzOTM0MjgxMUU2OEQxQkVEMUFDRjAxRDY4NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjgwREIxODM2MzQyODExRTY4RDFCRUQxQUNGMDFENjg3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjgwREIxODM3MzQyODExRTY4RDFCRUQxQUNGMDFENjg3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+3ZvvCwAAAgFJREFUeNq0ll0rREEYx9cSnwAJeYkLxZb2A2hTpMgSF26Vo7hB3t17T+vCy+6WL0AWJUXKjSj2RkrCDcKdSzlZ6//onyatY1/OPPXrzMyZZ85/5sw886T5/X5HDMsEXlINCtj2BE5ACGwD0zAMh07LiNHWAmZBWYx3xaQD3IJhitVmacoKpoNJflTsCqyBffChTKgOdIIKtslkxrGSEd0rOAWGwBsYBAFF2AtwghxwAXygG8xzQlEwqkOgk892ijNBE1hWxInlgmylLu+WQCN9RgKBQKsugbL5F1jvB4cJ+B/SR8wHkZmpiAmHwz+oAtt5Si/BahLj+ulbCNpsWLTo7xX0shwEn4mOxsMRZNWr4xe7WN5PYZwDPl06TnEeyw9x9L9TyhGGoWlwz7Y8XYdE7N2i3yOfpQrlwMN2U7mBbF9BiXFFoATc/NHPRVGqyX69VoSLPesQeEaBDRYCXyUKWIxTz+e5jl+8xXKXErjjNsQ+J30dyli2ClznHquUqJHEGAZ95ZBt6BAoG3yA9UVQk4C/hz5ifYiJpq67WFZxjqdwj4mA8x8/6bNLnxmI27Qrw/ormxnjNTPMK6+XScMR45zJk14LekCVkm5N2KHM7XZbplsSeEfAKT8qAlYsxvtOWLFyWhPWWBl1iL+umci08kEWU/5jntYdJUBrsy8BBgC/W3y8xrd9kQAAAABJRU5ErkJggg==")
-    }
-  </style>
-  <style>
-    body {
-      margin: 0px;
-      overflow: hidden
-    }
-
-    ul {
-      list-style: none
-    }
-
-    ul li {
-      list-style: none
-    }
-
-    h1 {
-      margin: 0;
-      padding: 0
-    }
-
-    * {
-      font-family: "΢���ź�";
-      font-weight: normal;
-      color: #333
-    }
-
-    input {
-      margin: 0;
-      padding: 0
-    }
-
-    .top {
-      height: 80px;
-      background-color: #CC3E3E
-    }
-
-    .top h1 {
-      float: left;
-      color: #fff;
-      font-size: 28px;
-      letter-spacing: 2px;
-      margin-top: 20px;
-      margin-left: 24px;
-      font-family: "΢���ź�"
-    }
-
-    .top a {
-      min-width: 90px;
-      float: right;
-      margin-top: 1.8%;
-      margin-right: 1%;
-      text-align: center;
-      color: #f5f5f5;
-      text-decoration: none;
-      height: 30px;
-      line-height: 30px;
-      font-family: "΢���ź�";
-      font-size: 0.85em;
-      padding-left: 8px;
-      padding-right: 3px
-    }
-
-    .top a:active {
-      background: #000;
-      color: #333;
-      font-weight: bold
-    }
-
-    .left {
-      width: 25%;
-      float: left
-    }
-
-    .user {
-      background: #fafafa;
-      padding-left: 20px;
-      padding-bottom: 5px;
-      border: 1px solid #d6d7dc;
-      border-right: none;
-      height: 174px;
-      width: 42%;
-      float: left
-    }
-
-    .user-1 {
-      background: #fafafa;
-      padding-left: 20px;
-      padding-bottom: 5px;
-      border: 1px solid #d6d7dc;
-      border-left: none;
-      height: 174px;
-      width: 43%;
-      float: left
-    }
-
-    .user-1 p {
-      color: red;
-      font-size: 30px;
-      padding-top: 16px
-    }
-
-    .user p {
-      font-family: "΢���ź�";
-      margin-top: 13px;
-      font-size: 14px;
-      height: 20px;
-      padding-left: 50px
-    }
-
-    .title {
-      height: 300px;
-      background: #fff;
-      padding-left: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin: 4%;
-      border: 1px solid #d6d7dc;
-      overflow-y: scroll
-    }
-
-    .title p {
-      line-height: 24px;
-      height: 24px;
-      font-family: "΢�����";
-      font-size: 14px;
-      font-weight: bold;
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDNEE3NjIyRDM0MzUxMUU2QURGMDhBQkY5MTgwNTFBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDNEE3NjIyRTM0MzUxMUU2QURGMDhBQkY5MTgwNTFBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM0QTc2MjJCMzQzNTExRTZBREYwOEFCRjkxODA1MUFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM0QTc2MjJDMzQzNTExRTZBREYwOEFCRjkxODA1MUFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+XcHIuwAAAQBJREFUeNpinDlzphQDA4MkA3HgGxDfBeJFQKwJxO4sQOIaEPMTofkrEPsAcScQ+0LFdrBANR8E4mUEDLgMxIJAfBrJgNssUAbIFbPwaGYD4jVQF2QDcS0QGwFxNAsRTodphtk6FYi9Qc4HYmkmIjSvRdIMAuuA+BkQ7wJiHiYCmtdBnQ0DIMOigFgbGh4MLAQ0e6NpjgTi38gKWXBo3gDEnkhia6A2/0ZXjM0LikAsSoxmbC4QAeLdQBwExNOB+AHU2X9wBRS6AQ5ALAu11QmIH+HTjM2A11C/HwHiL8RkDnQDDjKQCGAG2APxTBL0qSAbcAeItaCYFPAZiN8CBBgAnPgwVFhJsfwAAAAASUVORK5CYII=)no-repeat left 5px;
-      padding-left: 20px
-    }
-
-    .radio {
-      width: 90%;
-      height: 38px;
-      margin-top: -10px
-    }
-
-    .radio a {
-      width: 22px;
-      height: 22px;
-      margin-top: 4px;
-      margin-left: 4px;
-      border: 1px solid #d9d9d9;
-      float: left;
-      color: #333;
-      text-align: center;
-      line-height: 22px;
-      text-decoration: none;
-      font-size: 12px;
-      border-radius: 2px
-    }
-
-    .eg {
-      width: 32px;
-      height: 32px;
-      float: left;
-      margin-top: 14px;
-      margin-right: 4px
-    }
-
-    .radio .eg:hover {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmNTQ3ZDVmNC03ZWU1LTQ5NWYtYjE2ZS1mMTU2ZjcwNGE1MWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUZCRDM0NEQzNDM5MTFFNjkyQzdCQjgxNjRGQUVDM0YiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUZCRDM0NEMzNDM5MTFFNjkyQzdCQjgxNjRGQUVDM0YiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpmNTQ3ZDVmNC03ZWU1LTQ5NWYtYjE2ZS1mMTU2ZjcwNGE1MWQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ZjU0N2Q1ZjQtN2VlNS00OTVmLWIxNmUtZjE1NmY3MDRhNTFkIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+rzjq2wAAAMxJREFUeNrsl78Kg0AMxnMWzqmv6uRQ6Owg3NRH6avZDlZFEzhCsP4pJ0075IMPxSHfz+MCiYP7pQKAEu3hXS90QF8hTbu1HQL0+HLaKPJAnxMB2pVwhsh2wjv0DdIV4p+uydMJjOKDAx1xZgY/lgEQwCDaQkuD7IIa/Yw3VkucSV1gd8AADMAADMAADIBG5yY+tcSZciyngSRXAuBMOZZ7xRPgTLuEfwcwztwe7I4q1pjXXRzLF3c3dHEAoPxkOa03doJvLqdUO0wCDAABPjikR7fZ7wAAAABJRU5ErkJggg==)
-    }
-
-    .right {
-      width: 74%;
-      float: left;
-      background: #fff;
-      margin-top: 15px;
-      border: 1px solid #d6d7dc;
-      overflow-y: scroll
-    }
-
-    .radio_choice {
-      width: 100%;
-      height: 43px;
-      line-height: 40px;
-      margin: auto;
-      border-bottom: 1px solid #ccc;
-      font-size: 16px;
-      font-weight: bold;
-      font-family: "΢�����";
-      text-indent: 10px;
-      margin-left: 0;
-      color: #333
-    }
-
-    .right span {
-      background: #ECC3C3;
-      width: 96%;
-      line-height: 31px;
-      margin: auto;
-      display: block;
-      margin-top: 5px;
-      font-size: 16px;
-      padding: 0 10px;
-      border-radius: 5px
-    }
-
-    .right ul {
-      padding-left: 20px
-    }
-
-    .right ul li {
-      line-height: 25px;
-      font-size: 15px
-    }
-
-    .right ul li input {
-      margin-top: 6px;
-      margin-right: 6px;
-      border: 1px solid #ccc;
-      border-radius: 2px;
-      padding-left: 3px;
-      height: 15px;
-      width: 15px;
-      line-height: 10px;
-      cursor: pointer
-    }
-
-    .zongjie {
-      background: #fff;
-      padding: 0;
-      margin: 0;
-      padding-bottom: 0px;
-      width: 98%
-    }
-
-    .Height {
-      height: 20px
-    }
-
-    .right img {
-      margin-top: 8px;
-      cursor: pointer
-    }
-  </style>
-  <style>
-    .mask {
-      position: absolute;
-      top: 0px;
-      background-color: black;
-      z-index: 1002;
-      left: 0px;
-      opacity: 0.9;
-      -moz-opacity: 0.5
-    }
-  </style>
-  <style>
-    /*!
+ saved date: Thu Jul 10 2025 12:32:42 GMT+0800 (中国标准时间)
+--><meta charset=utf-8>
+<title>邢台农商银行2025年上半年合规考试</title>
+<style>:root{--sf-img-1: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmNTQ3ZDVmNC03ZWU1LTQ5NWYtYjE2ZS1mMTU2ZjcwNGE1MWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUZCRDM0NEQzNDM5MTFFNjkyQzdCQjgxNjRGQUVDM0YiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUZCRDM0NEMzNDM5MTFFNjkyQzdCQjgxNjRGQUVDM0YiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpmNTQ3ZDVmNC03ZWU1LTQ5NWYtYjE2ZS1mMTU2ZjcwNGE1MWQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ZjU0N2Q1ZjQtN2VlNS00OTVmLWIxNmUtZjE1NmY3MDRhNTFkIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+rzjq2wAAAMxJREFUeNrsl78Kg0AMxnMWzqmv6uRQ6Owg3NRH6avZDlZFEzhCsP4pJ0075IMPxSHfz+MCiYP7pQKAEu3hXS90QF8hTbu1HQL0+HLaKPJAnxMB2pVwhsh2wjv0DdIV4p+uydMJjOKDAx1xZgY/lgEQwCDaQkuD7IIa/Yw3VkucSV1gd8AADMAADMAADIBG5yY+tcSZciyngSRXAuBMOZZ7xRPgTLuEfwcwztwe7I4q1pjXXRzLF3c3dHEAoPxkOa03doJvLqdUO0wCDAABPjikR7fZ7wAAAABJRU5ErkJggg==");--sf-img-2: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMEVDQTlCQzM0MkUxMUU2OTBDNUE4NjlBMjk4QzVFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMEVDQTlCRDM0MkUxMUU2OTBDNUE4NjlBMjk4QzVFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQwRUNBOUJBMzQyRTExRTY5MEM1QTg2OUEyOThDNUUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQwRUNBOUJCMzQyRTExRTY5MEM1QTg2OUEyOThDNUUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+XToCwwAAAMtJREFUeNpi/P//PwMU3AdiBQYEmA7ET6H0OwYcgAmJrYBF3hKIDwOxDDEG4AJaQHwEiDXINQAE5KEuMSXFAHGozfeg+BMQzwFiXWRFLHgMCADil0DciSbOj8IDxQIUEwumIekhOgxg4C8QPyInEGEgE4j/ALEQuQY8A+JuaPogywCy08EDIPaG0iDACMTCYAZSXviPx4BWIDaHJihVIL4FNUAEORqf4Ym680DsAcRfoPx/QJwMthw5TonAdkD8GohTYWLIXiALAAQYAEQRx41zSOTkAAAAAElFTkSuQmCC");--sf-img-3: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDOUZBRDFEODM0MkUxMUU2Qjc1QkE1M0M0NjE3RjkxMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDOUZBRDFEOTM0MkUxMUU2Qjc1QkE1M0M0NjE3RjkxMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM5RkFEMUQ2MzQyRTExRTZCNzVCQTUzQzQ2MTdGOTEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM5RkFEMUQ3MzQyRTExRTZCNzVCQTUzQzQ2MTdGOTEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MCFISQAAANJJREFUeNpi/P//PwMU3AdiBQYEmA7ET6H0OwYcgAmJrYBF3hKIDwOxDDEG4AJaQHwEiDXINQAE5KEuMSXFAHGozfeg+BMQzwFiXWRFLHgMCADil0DciSbOj8IDxQIUEwumIekhOgxg4C8QPyInEEHgOxAHAvFvIBYj1Qs/gdgXiLdC+VeAWAycCIk0YCIQLwDif1A+iL4A0sdCpPNBUboZiI8B8UwgriUnFo4AsQ2U7Y0tFp4TcIU1RhpAS0hSRHhFAIjfAvFrmAAjUnYmCwAEGAByHgifftNg6gAAAABJRU5ErkJggg==");--sf-img-7: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MERCMTgzODM0MjgxMUU2OEQxQkVEMUFDRjAxRDY4NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4MERCMTgzOTM0MjgxMUU2OEQxQkVEMUFDRjAxRDY4NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjgwREIxODM2MzQyODExRTY4RDFCRUQxQUNGMDFENjg3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjgwREIxODM3MzQyODExRTY4RDFCRUQxQUNGMDFENjg3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+3ZvvCwAAAgFJREFUeNq0ll0rREEYx9cSnwAJeYkLxZb2A2hTpMgSF26Vo7hB3t17T+vCy+6WL0AWJUXKjSj2RkrCDcKdSzlZ6//onyatY1/OPPXrzMyZZ85/5sw886T5/X5HDMsEXlINCtj2BE5ACGwD0zAMh07LiNHWAmZBWYx3xaQD3IJhitVmacoKpoNJflTsCqyBffChTKgOdIIKtslkxrGSEd0rOAWGwBsYBAFF2AtwghxwAXygG8xzQlEwqkOgk892ijNBE1hWxInlgmylLu+WQCN9RgKBQKsugbL5F1jvB4cJ+B/SR8wHkZmpiAmHwz+oAtt5Si/BahLj+ulbCNpsWLTo7xX0shwEn4mOxsMRZNWr4xe7WN5PYZwDPl06TnEeyw9x9L9TyhGGoWlwz7Y8XYdE7N2i3yOfpQrlwMN2U7mBbF9BiXFFoATc/NHPRVGqyX69VoSLPesQeEaBDRYCXyUKWIxTz+e5jl+8xXKXErjjNsQ+J30dyli2ClznHquUqJHEGAZ95ZBt6BAoG3yA9UVQk4C/hz5ifYiJpq67WFZxjqdwj4mA8x8/6bNLnxmI27Qrw/ormxnjNTPMK6+XScMR45zJk14LekCVkm5N2KHM7XZbplsSeEfAKT8qAlYsxvtOWLFyWhPWWBl1iL+umci08kEWU/5jntYdJUBrsy8BBgC/W3y8xrd9kQAAAABJRU5ErkJggg==")}</style><style>body{margin:0px;overflow:hidden}ul{list-style:none}ul li{list-style:none}h1{margin:0;padding:0}*{font-family:"΢���ź�";font-weight:normal;color:#333}input{margin:0;padding:0}.top{height:80px;background-color:#CC3E3E}.top h1{float:left;color:#fff;font-size:28px;letter-spacing:2px;margin-top:20px;margin-left:24px;font-family:"΢���ź�"}.top a{min-width:90px;float:right;margin-top:1.8%;margin-right:1%;text-align:center;color:#f5f5f5;text-decoration:none;height:30px;line-height:30px;font-family:"΢���ź�";font-size:0.85em;padding-left:8px;padding-right:3px}.top a:active{background:#000;color:#333;font-weight:bold}.left{width:25%;float:left}.user{background:#fafafa;padding-left:20px;padding-bottom:5px;border:1px solid #d6d7dc;border-right:none;height:174px;width:42%;float:left}.user-1{background:#fafafa;padding-left:20px;padding-bottom:5px;border:1px solid #d6d7dc;border-left:none;height:174px;width:43%;float:left}.user-1 p{color:red;font-size:30px;padding-top:16px}.user p{font-family:"΢���ź�";margin-top:13px;font-size:14px;height:20px;padding-left:50px}.title{height:300px;background:#fff;padding-left:20px;padding-top:5px;padding-bottom:5px;margin:4%;border:1px solid #d6d7dc;overflow-y:scroll}.title p{line-height:24px;height:24px;font-family:"΢�����";font-size:14px;font-weight:bold;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDNEE3NjIyRDM0MzUxMUU2QURGMDhBQkY5MTgwNTFBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDNEE3NjIyRTM0MzUxMUU2QURGMDhBQkY5MTgwNTFBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM0QTc2MjJCMzQzNTExRTZBREYwOEFCRjkxODA1MUFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM0QTc2MjJDMzQzNTExRTZBREYwOEFCRjkxODA1MUFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+XcHIuwAAAQBJREFUeNpinDlzphQDA4MkA3HgGxDfBeJFQKwJxO4sQOIaEPMTofkrEPsAcScQ+0LFdrBANR8E4mUEDLgMxIJAfBrJgNssUAbIFbPwaGYD4jVQF2QDcS0QGwFxNAsRTodphtk6FYi9Qc4HYmkmIjSvRdIMAuuA+BkQ7wJiHiYCmtdBnQ0DIMOigFgbGh4MLAQ0e6NpjgTi38gKWXBo3gDEnkhia6A2/0ZXjM0LikAsSoxmbC4QAeLdQBwExNOB+AHU2X9wBRS6AQ5ALAu11QmIH+HTjM2A11C/HwHiL8RkDnQDDjKQCGAG2APxTBL0qSAbcAeItaCYFPAZiN8CBBgAnPgwVFhJsfwAAAAASUVORK5CYII=)no-repeat left 5px;padding-left:20px}.radio{width:90%;height:38px;margin-top:-10px}.radio a{width:22px;height:22px;margin-top:4px;margin-left:4px;border:1px solid #d9d9d9;float:left;color:#333;text-align:center;line-height:22px;text-decoration:none;font-size:12px;border-radius:2px}.eg{width:32px;height:32px;float:left;margin-top:14px;margin-right:4px}.current{background:var(--sf-img-1)}.radio .eg:hover{background:var(--sf-img-1)}.right{width:74%;float:left;background:#fff;margin-top:15px;border:1px solid #d6d7dc;overflow-y:scroll}.radio_choice{width:100%;height:43px;line-height:40px;margin:auto;border-bottom:1px solid #ccc;font-size:16px;font-weight:bold;font-family:"΢�����";text-indent:10px;margin-left:0;color:#333}.right span{background:#ECC3C3;width:96%;line-height:31px;margin:auto;display:block;margin-top:5px;font-size:16px;padding:0 10px;border-radius:5px}.right ul{padding-left:20px}.right ul li{line-height:25px;font-size:15px}.right ul li input{margin-top:6px;margin-right:6px;border:1px solid #ccc;border-radius:2px;padding-left:3px;height:15px;width:15px;line-height:10px;cursor:pointer}.zongjie{background:#fff;padding:0;margin:0;padding-bottom:0px;width:98%}.Height{height:20px}.right img{margin-top:8px;cursor:pointer}</style>
+<style>.mask{position:absolute;top:0px;background-color:black;z-index:1002;left:0px;opacity:0.9;-moz-opacity:0.5}</style>
+<style>/*!
  
  @Name: layer's style
  @Author: 璐ゅ績
  @Blog锛�sentsin.com
  
- */
-    html #layui_layer_skinlayercss {
-      display: none;
-      position: absolute;
-      width: 1989px
-    }
-
-    @-webkit-keyframes bounceIn {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.5);
-        transform: scale(.5)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1)
-      }
-    }
-
-    @keyframes bounceIn {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.5);
-        -ms-transform: scale(.5);
-        transform: scale(.5)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1)
-      }
-    }
-
-    @-webkit-keyframes bounceOut {
-      100% {
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7)
-      }
-
-      30% {
-        -webkit-transform: scale(1.03);
-        transform: scale(1.03)
-      }
-
-      0% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-      }
-    }
-
-    @keyframes bounceOut {
-      100% {
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        -ms-transform: scale(.7);
-        transform: scale(.7)
-      }
-
-      30% {
-        -webkit-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-        transform: scale(1.03)
-      }
-
-      0% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1)
-      }
-    }
-
-    @-webkit-keyframes zoomInDown {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.1) translateY(-2000px);
-        transform: scale(.1) translateY(-2000px);
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out
-      }
-
-      60% {
-        opacity: 1;
-        -webkit-transform: scale(.475) translateY(60px);
-        transform: scale(.475) translateY(60px);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out
-      }
-    }
-
-    @keyframes zoomInDown {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.1) translateY(-2000px);
-        -ms-transform: scale(.1) translateY(-2000px);
-        transform: scale(.1) translateY(-2000px);
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out
-      }
-
-      60% {
-        opacity: 1;
-        -webkit-transform: scale(.475) translateY(60px);
-        -ms-transform: scale(.475) translateY(60px);
-        transform: scale(.475) translateY(60px);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out
-      }
-    }
-
-    @-webkit-keyframes fadeInUpBig {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateY(2000px);
-        transform: translateY(2000px)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-      }
-    }
-
-    @keyframes fadeInUpBig {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateY(2000px);
-        -ms-transform: translateY(2000px);
-        transform: translateY(2000px)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0)
-      }
-    }
-
-    @-webkit-keyframes zoomInLeft {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.1) translateX(-2000px);
-        transform: scale(.1) translateX(-2000px);
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out
-      }
-
-      60% {
-        opacity: 1;
-        -webkit-transform: scale(.475) translateX(48px);
-        transform: scale(.475) translateX(48px);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out
-      }
-    }
-
-    @keyframes zoomInLeft {
-      0% {
-        opacity: 0;
-        -webkit-transform: scale(.1) translateX(-2000px);
-        -ms-transform: scale(.1) translateX(-2000px);
-        transform: scale(.1) translateX(-2000px);
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out
-      }
-
-      60% {
-        opacity: 1;
-        -webkit-transform: scale(.475) translateX(48px);
-        -ms-transform: scale(.475) translateX(48px);
-        transform: scale(.475) translateX(48px);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out
-      }
-    }
-
-    @-webkit-keyframes rollIn {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateX(-100%) rotate(-120deg);
-        transform: translateX(-100%) rotate(-120deg)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateX(0) rotate(0);
-        transform: translateX(0) rotate(0)
-      }
-    }
-
-    @keyframes rollIn {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateX(-100%) rotate(-120deg);
-        -ms-transform: translateX(-100%) rotate(-120deg);
-        transform: translateX(-100%) rotate(-120deg)
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateX(0) rotate(0);
-        -ms-transform: translateX(0) rotate(0);
-        transform: translateX(0) rotate(0)
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0
-      }
-
-      100% {
-        opacity: 1
-      }
-    }
-
-    @-webkit-keyframes shake {
-
-      0%,
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-      }
-
-      10%,
-      30%,
-      50%,
-      70%,
-      90% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px)
-      }
-
-      20%,
-      40%,
-      60%,
-      80% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px)
-      }
-    }
-
-    @keyframes shake {
-
-      0%,
-      100% {
-        -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0)
-      }
-
-      10%,
-      30%,
-      50%,
-      70%,
-      90% {
-        -webkit-transform: translateX(-10px);
-        -ms-transform: translateX(-10px);
-        transform: translateX(-10px)
-      }
-
-      20%,
-      40%,
-      60%,
-      80% {
-        -webkit-transform: translateX(10px);
-        -ms-transform: translateX(10px);
-        transform: translateX(10px)
-      }
-    }
-
-    @-webkit-keyframes fadeIn {
-      0% {
-        opacity: 0
-      }
-
-      100% {
-        opacity: 1
-      }
-    }
-  </style>
-  <meta name=referrer content=no-referrer>
-  <link type=image/x-icon rel="shortcut icon" href=data:,>
-  <style>
-    .sf-hidden {
-      display: none !important
-    }
-  </style>
-  <link rel=canonical href=https://px.hebnx.com/Train/train/exam/examination_timing/cc6e589e54cb47c6b72cee14d9e22a5c>
-  <meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
-  <style>
-    img[src="data:,"],
-    source[src="data:,"] {
-      display: none !important
-    }
-  </style>
-  </head>
-  <body cz-shortcut-listen=true>
-    <div id=mask class=mask></div>
-    <div id=top class=top>
-      <h1>邢台农商银行2025年上半年合规考试</h1>
-      <a id=saveAndCloseComment href=javascript:void(0) style="background:var(--sf-img-2) 4px center no-repeat rgb(218,57,57);display:none">提交评卷</a>
-      <a id=saveAndClose href=javascript:void(0) style="background:var(--sf-img-2) #da3939 no-repeat 4px center">提交试卷</a>
-      <a id=saveAndClose_ href=javascript:void(0) style="display:none;background:var(--sf-img-2) #A58282 no-repeat 4px center">提交中...</a>
-      <a id=commentPaper href=javascript:void(0) style="background:var(--sf-img-3) 4px center no-repeat rgb(218,57,57);display:none">保存评卷</a>
-      <a id=saveAnswer href=javascript:void(0) style="background:var(--sf-img-3) #da3939 no-repeat 4px center">保存答案</a>
-    </div>
-    <div class=left>
-      <div style=overflow:hidden;margin:4%>
-        <div class=user>
-          <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NzBCRkY3MzM0MjgxMUU2QkIyMkZGMTI3NzA0QUU0RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NzBCRkY3NDM0MjgxMUU2QkIyMkZGMTI3NzA0QUU0RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU3MEJGRjcxMzQyODExRTZCQjIyRkYxMjc3MDRBRTRGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3MEJGRjcyMzQyODExRTZCQjIyRkYxMjc3MDRBRTRGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m3Jz4wAAAbpJREFUeNrE1k0oBGEcx3HLIi9FSShKiYN3ViKlKA6OONkUB+uw5e2m2JILJeKilQPtQXHwVkJxISVtSS5KuTi4aMtLkpf1nfrTtJmRbWfmqU+z88w+T7+eZ55nHpvX640yorhcroj0E63zLA5unOBJnGIQCVEmFbtGfTp2UYlnnCGIKkyjGy24NTpgtEbdpoSbRSYa0IgMTKAY24i1IqATtZjHgEztd3nBMKZQjh4rAnbiDaM67cYlrDOSYfx+/w+9gHm4wr1OX4+4QL4Bgxb8awQ/dBZP6AL7tGKKL1GAbJ12yiovxbkVAX1SPwObRrtJWcE+KwJuyDbTjjXkqp7lYEX2wQP5bfpGrbykHVhHG1pxI+9bnozqsTyz5B20y15Xr6pLQrLqvhoexJsdMBE7GJHPWBfS5GuShVQZ3WsMyTSnmBVQmbplNGFRPmfKfUD1nwd578owhzqsIsaMgG2yMLaU0xJeddq9o1/CNstIGx5wTE4uvaG7uU5xywh7/ji6/afYflvFRSjEEu7+0VlA9sI+1MjZMezicDg0R7BCrvth9Hsg1xIjp/hEFsZeGH0cYgFHRgT8EmAAIqhbW13pIPEAAAAASUVORK5CYII=)no-repeat left center">秦子旺</p>
-          <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0ODBBRUI1MjM0MjgxMUU2ODgxMkM2NTNFQzQ0N0U0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0ODBBRUI1MzM0MjgxMUU2ODgxMkM2NTNFQzQ0N0U0MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ4MEFFQjUwMzQyODExRTY4ODEyQzY1M0VDNDQ3RTQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ4MEFFQjUxMzQyODExRTY4ODEyQzY1M0VDNDQ3RTQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MTCZsQAAAYZJREFUeNrs1s8rhEEYwPHdbV257sVBwonSFjmhJKVW2oMzh1fiQFlZyUWtUhwk8ZbTukm7cfQr8rtWrstN/gE3UV7fybN6vc3rtKNt26c+7c4zs+8+O+/MvBt0HCdQyhEKlHhUCiz7AsO2bfv1tWMEnahFFZ5xjjRO1SDLsopWTC6X+3kfjUa/C9SMq8MG+jR99WIY15jAfZEnTR0rQb9bHMeDq7gnydWIuORUdOCWOzD1X2swgV1US/sRbcigWWQkly8sEaxS5CZCJgucx7J7aokkXpHFhchKbs5znVGsmypwAYuaviN0IebKxWTTHGrGjzGLSRMFhv/of9fkPmQh6yJiagZXNH09uMKBK7cvuV7NeLXzJ4t+DsrrND5loxQihRMMoFtm81J2c8pzHfUDE5yJjqkCVczgRb5M5Ztwh1nXmhvEEhql/abOQgrbNvYk8bTXpKgttKABez6fPcY4xeWNPuo0uRu0oh9DciBHZGOoR90ZduR2m4jgr0blD2u5F/glwAD5nFoH5FVGkAAAAABJRU5ErkJggg==)no-repeat left center">考试中</p>
-          <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjQwNkVFQjM0MjgxMUU2OUZCMkM3RUY4NUE1NEMyQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjQwNkVFQzM0MjgxMUU2OUZCMkM3RUY4NUE1NEMyQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZCNDA2RUU5MzQyODExRTY5RkIyQzdFRjg1QTU0QzJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZCNDA2RUVBMzQyODExRTY5RkIyQzdFRjg1QTU0QzJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0e3pgAAAARNJREFUeNpi/P//P8NgBkwMgxwQ5cBZs2ZNBuFB6UCgw/KA1C8g/gFkl9DbgYz40iDQQblA6llaWtpaKD8ISMkC+RMH3IFAx2QDqVdAx6xGEw8BUlJA8UnUdszZs2fhbGNjY1QHAi0WAVJ8UHlfIOYG4hU4zAoF4r9AvA7K/wR08BsqORDkIEaYA1mQ5B8BMSeanlYCZnZD6e9AzEXrTMJJgTmctEqDLDjELwDxKQJ6zYDYgNaZBJcDlZDSIy4gQo9cjMuBfEQ4kGEgHXgQiLcT0OsJxPYD5UB7elhOiQNBRc4tAnrVgFhuoOrif0To/TuQIagAxQMBGHE58C0QC5Np6HtquAxWvRHdmhltURMBAAIMAC/oSgmGL0RPAAAAAElFTkSuQmCC)no-repeat left center">
-            <span id=questionNum>20</span> 题
-          </p>
-          <p style="background:var(--sf-img-7) no-repeat left center"> 考试总时间：不限时 </p>
-          <p style="background:var(--sf-img-7) no-repeat left center"> 考试用时： <span id=timeText>00:00:01</span>
-          </p>
-        </div>
-        <div class=user-1>
-          <p id=allScore style=display:none>0分</p>
-        </div>
-      </div>
-      <div class=title>
-        <div id=singleD>
-          <p>单项选择题</p>
-          <div class=radio>
-            <div class=eg id=currentone1>
-              <a id=singone1 href=javascript:void(0)>1</a>
-            </div>
-            <div class=eg id=currentone2>
-              <a id=singone2 href=javascript:void(0)>2</a>
-            </div>
-            <div class=eg id=currentone3>
-              <a id=singone3 href=javascript:void(0)>3</a>
-            </div>
-            <div class=eg id=currentone4>
-              <a id=singone4 href=javascript:void(0)>4</a>
-            </div>
-            <div class=eg id=currentone5>
-              <a id=singone5 href=javascript:void(0)>5</a>
-            </div>
-            <div class=eg id=currentone6>
-              <a id=singone6 href=javascript:void(0)>6</a>
-            </div>
-            <div class=eg id=currentone7>
-              <a id=singone7 href=javascript:void(0)>7</a>
-            </div>
-            <div class=eg id=currentone8>
-              <a id=singone8 href=javascript:void(0)>8</a>
-            </div>
-            <div class=eg id=currentone9>
-              <a id=singone9 href=javascript:void(0)>9</a>
-            </div>
-            <div class=eg id=currentone10>
-              <a id=singone10 href=javascript:void(0)>10</a>
-            </div>
-          </div>
-          <div style=clear:both></div>
-        </div>
-        <div id=multiD>
-          <p>多项选择题</p>
-          <div class=radio>
-            <div class=eg id=currenttwo1>
-              <a id=singtwo1 href=javascript:void(0)>1</a>
-            </div>
-            <div class=eg id=currenttwo2>
-              <a id=singtwo2 href=javascript:void(0)>2</a>
-            </div>
-            <div class=eg id=currenttwo3>
-              <a id=singtwo3 href=javascript:void(0)>3</a>
-            </div>
-            <div class=eg id=currenttwo4>
-              <a id=singtwo4 href=javascript:void(0)>4</a>
-            </div>
-            <div class=eg id=currenttwo5>
-              <a id=singtwo5 href=javascript:void(0)>5</a>
-            </div>
-            <div class=eg id=currenttwo6>
-              <a id=singtwo6 href=javascript:void(0)>6</a>
-            </div>
-            <div class=eg id=currenttwo7>
-              <a id=singtwo7 href=javascript:void(0)>7</a>
-            </div>
-            <div class=eg id=currenttwo8>
-              <a id=singtwo8 href=javascript:void(0)>8</a>
-            </div>
-            <div class=eg id=currenttwo9>
-              <a id=singtwo9 href=javascript:void(0)>9</a>
-            </div>
-            <div class=eg id=currenttwo10>
-              <a id=singtwo10 href=javascript:void(0)>10</a>
-            </div>
-          </div>
-          <div style=clear:both></div>
-        </div>
-        <div id=judgeD style=display:none></div>
-        <div id=blankD style=display:none></div>
-        <div id=answerD style=display:none></div>
-        <div id=compositionD style=display:none></div>
-        <div id=explainD style=display:none></div>
-        <div id=analysisD style=display:none></div>
-        <div id=readD style=display:none></div>
-        <div id=articleD style=display:none></div>
-      </div>
-    </div>
-    <div class=right style=height:85%>
-      <div class=radio_choice id=singleItem>单项选择题（共10道题，共50分）</div>
-      <div id=one0 style=height:auto>
-        <span> 1、各级农信机构应在举报处理制度中建立健全（）机制，有效甄别举报中反映的违法违规事项，及时采取措施处置和化解案件风险隐患。 <img id=seePormot_single0 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single0 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、案件风险线索查处</li>
-          <li>B、案件风险线索排查</li>
-          <li>C、案件风险线索举报</li>
-          <li>D、案件风险线索发现查处</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption0 type=radio value=0047bd62a5c04651a0ac9b63a48d289e class=seeGrade>A选项 <input autocomplete=off name=singleOption0 type=radio value=055381d5eeb545519ad4b00e9528f4a4 class=seeGrade>B选项 <input autocomplete=off name=singleOption0 type=radio value=1d7bf405141c489bb8850df08863cbac class=seeGrade>C选项 <input autocomplete=off name=singleOption0 type=radio value=6e4c642e8dc64bd187bd174d7f0c16f5 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one1 style=height:auto>
-        <span> 2、各级农信机构承担本机构案件风险防控的（）责任。 <img id=seePormot_single1 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single1 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、主体</li>
-          <li>B、直接</li>
-          <li>C、管理</li>
-          <li>D、主要</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption1 type=radio value=058d61c89dfb43c5bbac8e8fb277c65d class=seeGrade>A选项 <input autocomplete=off name=singleOption1 type=radio value=26e8f4aad5964a8ab53cb463b43e4f95 class=seeGrade>B选项 <input autocomplete=off name=singleOption1 type=radio value=bee4c4fd49f84bc0b8b453807cd59c11 class=seeGrade>C选项 <input autocomplete=off name=singleOption1 type=radio value=d52aebc0287c4e139eb68704470bacd7 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one2 style=height:auto>
-        <span> 3、各法人机构（）承担案件风险防控执行责任 <img id=seePormot_single2 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single2 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、案件风险防控牵头部门</li>
-          <li>B、高级管理层</li>
-          <li>C、董（理）事会</li>
-          <li>D、监事会</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption2 type=radio value=11c8ec745eab43eaaaf426c701d74cc5 class=seeGrade>A选项 <input autocomplete=off name=singleOption2 type=radio value=13df3eb6c0c94aee95c489c830c408ce class=seeGrade>B选项 <input autocomplete=off name=singleOption2 type=radio value=230cacd3e7834fcfb84dfe68b0c223cb class=seeGrade>C选项 <input autocomplete=off name=singleOption2 type=radio value=9f6e4164f817462bb004e462aea00bb5 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one3 style=height:auto>
-        <span> 4、以下哪项属于重大案件的情形？ <img id=seePormot_single3 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single3 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、案件由外部审计发现</li>
-          <li>B、涉案金额等值人民币500万元</li>
-          <li>C、风险敞口金额占机构净资产5%</li>
-          <li>D、引发区域性系统性风险</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption3 type=radio value=35cce1b148644ba1b02c81261f6b246f class=seeGrade>A选项 <input autocomplete=off name=singleOption3 type=radio value=86df28ab84cc406e8d9f3331d22ca25c class=seeGrade>B选项 <input autocomplete=off name=singleOption3 type=radio value=a88a5fa7fbe041348293b96606e3c570 class=seeGrade>C选项 <input autocomplete=off name=singleOption3 type=radio value=dd7f88db47bc48c98831ba4fd3040d3b class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one4 style=height:auto>
-        <span> 5、各法人机构内设部门和分支机构应对其职责范围内的案件风险防控工作承担（）责任。 <img id=seePormot_single4 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single4 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、主体</li>
-          <li>B、管理</li>
-          <li>C、直接</li>
-          <li>D、主要</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption4 type=radio value=6172fa1ed4724f12a833453417096e89 class=seeGrade>A选项 <input autocomplete=off name=singleOption4 type=radio value=79aefa3bca614f44bb5ab151de3e63f0 class=seeGrade>B选项 <input autocomplete=off name=singleOption4 type=radio value=881a08fdfadd4b8fa9f2d92e4a744668 class=seeGrade>C选项 <input autocomplete=off name=singleOption4 type=radio value=e2bb5cb7d49d4802a549e5354d68ef76 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one5 style=height:auto>
-        <span> 6、重大案件的追责问责工作由哪一级机构负责？ <img id=seePormot_single5 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single5 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、上级机构分管领导</li>
-          <li>B、案发机构</li>
-          <li>C、属地监管部门</li>
-          <li>D、省联社</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption5 type=radio value=44cd23536a9a445887012b19fbe74944 class=seeGrade>A选项 <input autocomplete=off name=singleOption5 type=radio value=5b490af38a874642a599db24ac2d2130 class=seeGrade>B选项 <input autocomplete=off name=singleOption5 type=radio value=9fc7ed3bd9e643c8b4d81eed4998e2f0 class=seeGrade>C选项 <input autocomplete=off name=singleOption5 type=radio value=dfe5a6c2f75f4fc5bed613e23744cd97 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one6 style=height:auto>
-        <span> 7、以下哪个是董（理）事会的主要职责 <img id=seePormot_single6 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single6 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、审议批准本机构案件风险防控相关制度，并监督检查执行情况</li>
-          <li>B、审议本机构年度案件风险防控评估等相关情况报告</li>
-          <li>C、推动落实案件风险防控的各项监管要求</li>
-          <li>D、统筹组织案件风险排查与处置、从业人员行为管理工作</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption6 type=radio value=aac61898daef466e9a2c718dcacf527b class=seeGrade>A选项 <input autocomplete=off name=singleOption6 type=radio value=af34a9e4e79d4a78a8f54ad960846d2e class=seeGrade>B选项 <input autocomplete=off name=singleOption6 type=radio value=dfdcd4c92a1945cf82f2f560e4e34382 class=seeGrade>C选项 <input autocomplete=off name=singleOption6 type=radio value=eb3687fff7b2475981621b6a61d3ee26 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one7 style=height:auto>
-        <span> 8、县级法人机构（石家庄审计中心辖内除外）发生案件后，需在知悉后多少个工作日内报送《案件确认报告》？ <img id=seePormot_single7 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single7 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、2个工作日</li>
-          <li>B、3个工作日</li>
-          <li>C、5个工作日</li>
-          <li>D、1个工作日</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption7 type=radio value=0c89f10979d74227960b6ed9e10187ab class=seeGrade>A选项 <input autocomplete=off name=singleOption7 type=radio value=7854491460e84654acc3393f308095c1 class=seeGrade>B选项 <input autocomplete=off name=singleOption7 type=radio value=9de3801685e14632846928c91215afa4 class=seeGrade>C选项 <input autocomplete=off name=singleOption7 type=radio value=cb9df6d387e541fe82062145666b4e8f class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one8 style=height:auto>
-        <span> 9、案件管理工作遵循的基本原则不包括以下哪一项？ <img id=seePormot_single8 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single8 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、集中统一处理</li>
-          <li>B、机构为主</li>
-          <li>C、属地监管</li>
-          <li>D、分级负责</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption8 type=radio value=4b4d5a9e65804ccb91a7830de512f1b7 class=seeGrade>A选项 <input autocomplete=off name=singleOption8 type=radio value=5e3e96e412a94768bf13bf0ca2df0cf0 class=seeGrade>B选项 <input autocomplete=off name=singleOption8 type=radio value=6314d7d89a9f4ddfbb168a963fccd685 class=seeGrade>C选项 <input autocomplete=off name=singleOption8 type=radio value=e93525a03bb84a2aaecc3dd54c0d01c6 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=one9 style=height:auto>
-        <span> 10、案发机构需在报送案件报告后多长时间内报送调查报告？ <img id=seePormot_single9 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_single9 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、6个月</li>
-          <li>B、1年</li>
-          <li>C、2年</li>
-          <li>D、3个月</li>
-          <li style=float:left;width:500px>
-            <input autocomplete=off name=singleOption9 type=radio value=2d8309e21b29456b88b35598c4544b31 class=seeGrade>A选项 <input autocomplete=off name=singleOption9 type=radio value=5ae9e99f9b8c4fc09c46bbdaa79b0bab class=seeGrade>B选项 <input autocomplete=off name=singleOption9 type=radio value=e4306b8f39c047929b48af9f0f9ca5cc class=seeGrade>C选项 <input autocomplete=off name=singleOption9 type=radio value=f275abef463b431d8e3066ce6f1b7b92 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div class=radio_choice id=multiItem>多项选择题（共10道题，共50分）</div>
-      <div id=two0 style=height:auto>
-        <span> 1、案发机构在案件处置中需承担哪些职责？（多选） <img id=seePormot_multi0 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_multi0 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、报送案件信息</li>
-          <li>B、对责任人员追责问责</li>
-          <li>C、开展涉案业务调查</li>
-          <li>D、制定整改方案</li>
-          <li>
-            <input name=multiOption0 type=checkbox value=0b8815288a274a938328d69e92431d28 class=seeGrade>A选项 <input name=multiOption0 type=checkbox value=547d9804e58f45dcb09a712446d3ca7d class=seeGrade>B选项 <input name=multiOption0 type=checkbox value=9b7873939a214d6a980bee3a46037ef8 class=seeGrade>C选项 <input name=multiOption0 type=checkbox value=e28ddc1f6db243eca8098442ccfeb355 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=two1 style=height:auto>
-        <span> 2、各级农信机构在内部监督检查制度中应建立健全监督和检查案件风险防控的相关机制，组织开展相关条线和各级机构案件风险防控内部监督检查，并重点加大对（）的监督检查力度。 <img id=seePormot_multi1 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_multi1 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、基层网点</li>
-          <li>B、案件易发部位</li>
-          <li>C、薄弱环节</li>
-          <li>D、关键岗位</li>
-          <li>
-            <input name=multiOption1 type=checkbox value=3ee25b5290754d2bb9f82606a2a183f3 class=seeGrade>A选项 <input name=multiOption1 type=checkbox value=544dd7d102274f4e91c794a2c057e403 class=seeGrade>B选项 <input name=multiOption1 type=checkbox value=a7a6862867ab4931b94a814fbf3dc785 class=seeGrade>C选项 <input name=multiOption1 type=checkbox value=fe0e762b627843cd91ee62f02e89fbca class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=two2 style=height:auto>
-        <span> 3、案件审结报告需包含哪些内容？（多选） <img id=seePormot_multi2 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_multi2 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、整改方案</li>
-          <li>B、舆情管理措施</li>
-          <li>C、案件基本情况</li>
-          <li>D、追责问责结果</li>
-          <li>
-            <input name=multiOption2 type=checkbox value=079bb9e4d2de4f80ad9ac5138dea0725 class=seeGrade>A选项 <input name=multiOption2 type=checkbox value=0fa3748616b248febe959f56721c531b class=seeGrade>B选项 <input name=multiOption2 type=checkbox value=5a095e8ba7c04c88b692008bb0f10a2c class=seeGrade>C选项 <input name=multiOption2 type=checkbox value=daeed7e0527c4f90a6c528fedce6aa7f class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=two3 style=height:auto>
-        <span> 4、各法人机构应不断提高内部控制有效性，持续完善案件风险防控重点措施，确保案件风险整体可控,包括但不限于（）等。 <img id=seePormot_multi3 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_multi3 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、账户对账和异常交易账户管理</li>
-          <li>B、股东股权和关联交易管理</li>
-          <li>C、重要印章凭证管理</li>
-          <li>D、重要岗位轮岗和强制休假管理</li>
-          <li>E、分级授权体系和权限管理</li>
-          <li>
-            <input name=multiOption3 type=checkbox value=09b0ed0d0a6b439698cae27d82ca2c53 class=seeGrade>A选项 <input name=multiOption3 type=checkbox value=1653aae9d9b54271bf9d4669c32a0bc5 class=seeGrade>B选项 <input name=multiOption3 type=checkbox value=39545cfe6395402283a0611d024a4db5 class=seeGrade>C选项 <input name=multiOption3 type=checkbox value=8e573591017040999827e6874b8f510f class=seeGrade>D选项 <input name=multiOption3 type=checkbox value=cb24c0f238df4a6fa2dd809eaec909e6 class=seeGrade>E选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=two4 style=height:auto>
-        <span> 5、各级农信机构应建立健全案件风险防控机制，构建起覆盖案件风险排查与处置、（）追责问责、问题整改、举报处理、考核奖励、培训教育等环节的全链条防控体系。 <img id=seePormot_multi4 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>
-          <img id=collectQuestion_multi4 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
-        </span>
-        <ul>
-          <li>A、领导干部监督</li>
-          <li>B、案件查处报送</li>
-          <li>C、内部监督检查</li>
-          <li>D、从业人员行为管理</li>
-          <li>
-            <input name=multiOption4 type=checkbox value=4a7fc20d75244113bc7af00a11031306 class=seeGrade>A选项 <input name=multiOption4 type=checkbox value=6350ed514e644dcd9c225a64546bab5b class=seeGrade>B选项 <input name=multiOption4 type=checkbox value=8f37a2b2e0574435911556250ff07830 class=seeGrade>C选项 <input name=multiOption4 type=checkbox value=f01aeea4e4574e7dad262f9ba0eb8794 class=seeGrade>D选项
-          </li>
-        </ul>
-        <div class="zongjie Height"></div>
-      </div>
-      <div id=two5 style=height:auto>
-        <span> 6、案件撤销的情形包括哪些？（多选） <img id=seePormot_multi5 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>undefined<img id=collectQuestion_multi5 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>undefined</span>undefined<ul>undefined<li>A、公安撤案</li>undefined<li>B、法院判决无罪</li>undefined<li>C、监管部门核查不符合案件定义</li>undefined<li>D、案件风险事件未升级</li>undefined<li>undefined<input name=multiOption5 type=checkbox value=04dd796edec74236ae38c2a8043256df class=seeGrade>A选项 undefined<input name=multiOption5 type=checkbox value=53133a3a370743af8874b9d7fab83073 class=seeGrade>B选项 undefined<input name=multiOption5 type=checkbox value=66408a0993af454ea3bb05edebd5c9be class=seeGrade>C选项 undefined<input name=multiOption5 type=checkbox value=c948fce406fa4111bdb6aaa0924e849f class=seeGrade>D选项 undefined</li>undefined</ul>undefined<div class="zongjie Height"></div>undefined
-      </div>undefined<div id=two6 style=height:auto>undefined<span> 7、案件风险防控遵循以下原则：（） undefined<img id=seePormot_multi6 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>undefined<img id=collectQuestion_multi6 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>undefined</span>undefined<ul>undefined<li>A、联防联控、各司其职</li>undefined<li>B、法人主责、分级负责</li>undefined<li>C、全面覆盖、突出重点</li>undefined<li>D、预防为主、关口前移</li>undefined<li>undefined<input name=multiOption6 type=checkbox value=29643525b21a43abb663b5524dafa5eb class=seeGrade>A选项 undefined<input name=multiOption6 type=checkbox value=826bc1f9cb144a7bb017dc9f29e5ce39 class=seeGrade>B选项 undefined<input name=multiOption6 type=checkbox value=bc3f8f6042df4e1282f02e1437c5d7e1 class=seeGrade>C选项 undefined<input name=multiOption6 type=checkbox value=c9f4dd801f264426a06d191ccc3fc174 class=seeGrade>D选项 undefined</li>undefined</ul>undefined<div class="zongjie Height"></div>undefined</div>undefined<div id=two7 style=height:auto>undefined<span> 8、各法人机构应制定案件风险排查与处置制度，确定案件风险排查的范围、内容、频率等事项，建立健全（）等关键环节的常态化风险排查与处置机制。 undefined<img id=seePormot_multi7 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>undefined<img id=collectQuestion_multi7 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>undefined</span>undefined<ul>undefined<li>A、客户准入</li>undefined<li>B、决策审批</li>undefined<li>C、业务处理</li>undefined<li>D、岗位准入</li>undefined<li>undefined<input name=multiOption7 type=checkbox value=3b46f805f79d402fb279f52650180cae class=seeGrade>A选项 undefined<input name=multiOption7 type=checkbox value=7c4759213e324e4bae7abd2f3a22e3ff class=seeGrade>B选项 undefined<input name=multiOption7 type=checkbox value=83e8863d421d4deba49a134313d8d755 class=seeGrade>C选项 undefined<input name=multiOption7 type=checkbox value=8bdc75ce4e1246c5b127773e1607fadc class=seeGrade>D选项 undefined</li>undefined</ul>undefined<div class="zongjie Height"></div>undefined</div>undefined<div id=two8 style=height:auto>undefined<span> 9、确定案件报送主体时需考虑哪些因素？（多选） undefined<img id=seePormot_multi8 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>undefined<img id=collectQuestion_multi8 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>undefined</span>undefined<ul>undefined<li>A、业务经办机构</li>undefined<li>B、案件发生时间</li>undefined<li>C、案件是否自查发现</li>undefined<li>D、涉案人员作案时的身份</li>undefined<li>undefined<input name=multiOption8 type=checkbox value=6a8717f356cc450597cda56877fb6e2d class=seeGrade>A选项 undefined<input name=multiOption8 type=checkbox value=7246776208564e729523ad755a16c09b class=seeGrade>B选项 undefined<input name=multiOption8 type=checkbox value=d244c11d7c434277abf9e8eed27a529e class=seeGrade>C选项 undefined<input name=multiOption8 type=checkbox value=ee2db2af6f7f43849c811e235a50458c class=seeGrade>D选项 undefined</li>undefined</ul>undefined<div class="zongjie Height"></div>undefined</div>undefined<div id=two9 style=height:auto>undefined<span> 10、以下哪些情形属于案件风险事件？（多选） undefined<img id=seePormot_multi9 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示>undefined<img id=collectQuestion_multi9 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>undefined</span>undefined<ul>undefined<li>A、案件已由法院判决无罪</li>undefined<li>B、从业人员利用职务便利侵犯客户权益且已立案</li>undefined<li>C、从业人员被立案调查但未确定是否与业务相关</li>undefined<li>D、机构向公安机关报案但未立案</li>undefined<li>undefined<input name=multiOption9 type=checkbox value=60536cf6f1bc44198c77a0ab12c7dd7e class=seeGrade>A选项 undefined<input name=multiOption9 type=checkbox value=be9577bd05644b23bbb677d67ae7544a class=seeGrade>B选项 undefined<input name=multiOption9 type=checkbox value=e4a1e9741df84c26b1d3cc29013ea3f8 class=seeGrade>C选项 undefined<input name=multiOption9 type=checkbox value=ef2c52e32d8a4949a947b66342b0aa04 class=seeGrade>D选项 undefined</li>undefined</ul>undefined<div class="zongjie Height"></div>undefined</div>undefined<div class=radio_choice id=judgeItem style=display:none>判断题（共0道题，共0分）</div>undefined<div style=clear:both></div>undefined<div class=radio_choice id=blankItem style=display:none>填空题（共0道题，共0分）</div>undefined<div class=radio_choice id=answerItem style=display:none>问答题（共0道题，共0分）</div>undefined<div class=radio_choice id=compositionItem style=display:none>作文题（共0道题，共0分）</div>undefined<div class=radio_choice id=explainItem style=display:none>名词解释（共0道题，共0分）</div>undefined<div class=radio_choice id=analysisItem style=display:none>案例分析（共0道题，共0分）</div>undefined<div class=radio_choice id=readItem style=display:none>阅读题（共0道题，共0分）</div>undefined<div class=radio_choice id=articleItem style=display:none>文章推理题（共0道题，共分）</div>undefined
-    </div>undefined<div id=allow_copycopy-2076e194124e2936e3b3d29ff98f2c4e>undefined<div class=allow_copy_content style=top:0px;left:0px;display:none></div>undefined</div>undefined<div class=xl-chrome-ext-bar_4DB361DE-01F7-4376-B494-639E489D19ED id=xl_chrome_ext_4DB361DE-01F7-4376-B494-639E489D19ED data-v-app style=display:block>undefined<div>undefined<div id=xl_chrome_ext_video_tag_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED config="[object Object]" uiversion=v2 exception=false latestvideosrc isshowvideotag=false isshowdownloadbar=true isshowcloudaddbar=false latestvideoelement>undefined<div>undefined<div class=_video_op_wrapper_mpbxe_1 config="[object Object]" uiversion=v2 style=display:none></div>undefined</div>undefined</div>undefined<div class="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED _badge_wrapper_eor63_1 sf-hidden" id=badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED></div>undefined</div>undefined</div>
+ */html #layui_layer_skinlayercss{display:none;position:absolute;width:1989px}@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}@-webkit-keyframes bounceOut{100%{opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}30%{-webkit-transform:scale(1.03);transform:scale(1.03)}0%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes bounceOut{100%{opacity:0;-webkit-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7)}30%{-webkit-transform:scale(1.03);-ms-transform:scale(1.03);transform:scale(1.03)}0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}@-webkit-keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);-ms-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(60px);-ms-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@-webkit-keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(48px);transform:scale(.475) translateX(48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);-ms-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(48px);-ms-transform:scale(.475) translateX(48px);transform:scale(.475) translateX(48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@-webkit-keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}100%{opacity:1;-webkit-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0)}}@keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);-ms-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}100%{opacity:1;-webkit-transform:translateX(0) rotate(0);-ms-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0)}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}@keyframes shake{0%,100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);-ms-transform:translateX(10px);transform:translateX(10px)}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}</style>
+<meta name=referrer content=no-referrer><link type=image/x-icon rel="shortcut icon" href=data:,><style>.sf-hidden{display:none!important}</style><link rel=canonical href=https://px.hebnx.com/Train/train/exam/examination_timing/cc6e589e54cb47c6b72cee14d9e22a5c><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
+<body cz-shortcut-listen=true>
+ <div id=mask class=mask></div>
+ <div id=top class=top>
+ <h1>邢台农商银行2025年上半年合规考试</h1>
+ <a id=saveAndCloseComment href=javascript:void(0) style="background:var(--sf-img-2) 4px center no-repeat rgb(218,57,57);display:none">提交评卷</a>
+ <a id=saveAndClose href=javascript:void(0) style="background:var(--sf-img-2) #da3939 no-repeat 4px center">提交试卷</a>
+ <a id=saveAndClose_ href=javascript:void(0) style="display:none;background:var(--sf-img-2) #A58282 no-repeat 4px center">提交中...</a>
+ <a id=commentPaper href=javascript:void(0) style="background:var(--sf-img-3) 4px center no-repeat rgb(218,57,57);display:none">保存评卷</a>
+ <a id=saveAnswer href=javascript:void(0) style="background:var(--sf-img-3) #da3939 no-repeat 4px center">保存答案</a>
+ 
+ </div>
+ <div class=left>
+ <div style=overflow:hidden;margin:4%>
+ <div class=user>
+ <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NzBCRkY3MzM0MjgxMUU2QkIyMkZGMTI3NzA0QUU0RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NzBCRkY3NDM0MjgxMUU2QkIyMkZGMTI3NzA0QUU0RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU3MEJGRjcxMzQyODExRTZCQjIyRkYxMjc3MDRBRTRGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3MEJGRjcyMzQyODExRTZCQjIyRkYxMjc3MDRBRTRGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m3Jz4wAAAbpJREFUeNrE1k0oBGEcx3HLIi9FSShKiYN3ViKlKA6OONkUB+uw5e2m2JILJeKilQPtQXHwVkJxISVtSS5KuTi4aMtLkpf1nfrTtJmRbWfmqU+z88w+T7+eZ55nHpvX640yorhcroj0E63zLA5unOBJnGIQCVEmFbtGfTp2UYlnnCGIKkyjGy24NTpgtEbdpoSbRSYa0IgMTKAY24i1IqATtZjHgEztd3nBMKZQjh4rAnbiDaM67cYlrDOSYfx+/w+9gHm4wr1OX4+4QL4Bgxb8awQ/dBZP6AL7tGKKL1GAbJ12yiovxbkVAX1SPwObRrtJWcE+KwJuyDbTjjXkqp7lYEX2wQP5bfpGrbykHVhHG1pxI+9bnozqsTyz5B20y15Xr6pLQrLqvhoexJsdMBE7GJHPWBfS5GuShVQZ3WsMyTSnmBVQmbplNGFRPmfKfUD1nwd578owhzqsIsaMgG2yMLaU0xJeddq9o1/CNstIGx5wTE4uvaG7uU5xywh7/ji6/afYflvFRSjEEu7+0VlA9sI+1MjZMezicDg0R7BCrvth9Hsg1xIjp/hEFsZeGH0cYgFHRgT8EmAAIqhbW13pIPEAAAAASUVORK5CYII=)no-repeat left center">秦子旺</p>
+ <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0ODBBRUI1MjM0MjgxMUU2ODgxMkM2NTNFQzQ0N0U0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0ODBBRUI1MzM0MjgxMUU2ODgxMkM2NTNFQzQ0N0U0MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ4MEFFQjUwMzQyODExRTY4ODEyQzY1M0VDNDQ3RTQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ4MEFFQjUxMzQyODExRTY4ODEyQzY1M0VDNDQ3RTQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MTCZsQAAAYZJREFUeNrs1s8rhEEYwPHdbV257sVBwonSFjmhJKVW2oMzh1fiQFlZyUWtUhwk8ZbTukm7cfQr8rtWrstN/gE3UV7fybN6vc3rtKNt26c+7c4zs+8+O+/MvBt0HCdQyhEKlHhUCiz7AsO2bfv1tWMEnahFFZ5xjjRO1SDLsopWTC6X+3kfjUa/C9SMq8MG+jR99WIY15jAfZEnTR0rQb9bHMeDq7gnydWIuORUdOCWOzD1X2swgV1US/sRbcigWWQkly8sEaxS5CZCJgucx7J7aokkXpHFhchKbs5znVGsmypwAYuaviN0IebKxWTTHGrGjzGLSRMFhv/of9fkPmQh6yJiagZXNH09uMKBK7cvuV7NeLXzJ4t+DsrrND5loxQihRMMoFtm81J2c8pzHfUDE5yJjqkCVczgRb5M5Ztwh1nXmhvEEhql/abOQgrbNvYk8bTXpKgttKABez6fPcY4xeWNPuo0uRu0oh9DciBHZGOoR90ZduR2m4jgr0blD2u5F/glwAD5nFoH5FVGkAAAAABJRU5ErkJggg==)no-repeat left center">考试中</p>
+ <p style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjQwNkVFQjM0MjgxMUU2OUZCMkM3RUY4NUE1NEMyQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjQwNkVFQzM0MjgxMUU2OUZCMkM3RUY4NUE1NEMyQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZCNDA2RUU5MzQyODExRTY5RkIyQzdFRjg1QTU0QzJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZCNDA2RUVBMzQyODExRTY5RkIyQzdFRjg1QTU0QzJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0e3pgAAAARNJREFUeNpi/P//P8NgBkwMgxwQ5cBZs2ZNBuFB6UCgw/KA1C8g/gFkl9DbgYz40iDQQblA6llaWtpaKD8ISMkC+RMH3IFAx2QDqVdAx6xGEw8BUlJA8UnUdszZs2fhbGNjY1QHAi0WAVJ8UHlfIOYG4hU4zAoF4r9AvA7K/wR08BsqORDkIEaYA1mQ5B8BMSeanlYCZnZD6e9AzEXrTMJJgTmctEqDLDjELwDxKQJ6zYDYgNaZBJcDlZDSIy4gQo9cjMuBfEQ4kGEgHXgQiLcT0OsJxPYD5UB7elhOiQNBRc4tAnrVgFhuoOrif0To/TuQIagAxQMBGHE58C0QC5Np6HtquAxWvRHdmhltURMBAAIMAC/oSgmGL0RPAAAAAElFTkSuQmCC)no-repeat left center">
+ <span id=questionNum>20</span>
+ 题
+ </p>
+ 
+ <p style="background:var(--sf-img-7) no-repeat left center">
+ 考试总时间：不限时
+ </p>
+ <p style="background:var(--sf-img-7) no-repeat left center">
+ 考试用时：<span id=timeText>00:01:24</span>
+ </p>
+ </div>
+ <div class=user-1>
+ <p id=allScore style=display:none>0分</p>
+ </div>
+ </div>
+ <div class=title>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div id=singleD>
+ <p>单项选择题</p>
+ <div class=radio>
+ <div class="eg current" id=currentone1>
+ <a id=singone1 href=javascript:void(0)>1</a>
+ </div>
+ <div class="eg current" id=currentone2>
+ <a id=singone2 href=javascript:void(0)>2</a>
+ </div>
+ <div class="eg current" id=currentone3>
+ <a id=singone3 href=javascript:void(0)>3</a>
+ </div>
+ <div class="eg current" id=currentone4>
+ <a id=singone4 href=javascript:void(0)>4</a>
+ </div>
+ <div class="eg current" id=currentone5>
+ <a id=singone5 href=javascript:void(0)>5</a>
+ </div>
+ <div class="eg current" id=currentone6>
+ <a id=singone6 href=javascript:void(0)>6</a>
+ </div>
+ <div class="eg current" id=currentone7>
+ <a id=singone7 href=javascript:void(0)>7</a>
+ </div>
+ <div class="eg current" id=currentone8>
+ <a id=singone8 href=javascript:void(0)>8</a>
+ </div>
+ <div class="eg current" id=currentone9>
+ <a id=singone9 href=javascript:void(0)>9</a>
+ </div>
+ <div class="eg current" id=currentone10>
+ <a id=singone10 href=javascript:void(0)>10</a>
+ </div>
+ </div>
+ <div style=clear:both></div>
+ </div>
+ <div id=multiD>
+ <p>多项选择题</p>
+ <div class=radio>
+ <div class="eg current" id=currenttwo1>
+ <a id=singtwo1 href=javascript:void(0)>1</a>
+ </div>
+ <div class="eg current" id=currenttwo2>
+ <a id=singtwo2 href=javascript:void(0)>2</a>
+ </div>
+ <div class="eg current" id=currenttwo3>
+ <a id=singtwo3 href=javascript:void(0)>3</a>
+ </div>
+ <div class="eg current" id=currenttwo4>
+ <a id=singtwo4 href=javascript:void(0)>4</a>
+ </div>
+ <div class="eg current" id=currenttwo5>
+ <a id=singtwo5 href=javascript:void(0)>5</a>
+ </div>
+ <div class="eg current" id=currenttwo6>
+ <a id=singtwo6 href=javascript:void(0)>6</a>
+ </div>
+ <div class="eg current" id=currenttwo7>
+ <a id=singtwo7 href=javascript:void(0)>7</a>
+ </div>
+ <div class="eg current" id=currenttwo8>
+ <a id=singtwo8 href=javascript:void(0)>8</a>
+ </div>
+ <div class="eg current" id=currenttwo9>
+ <a id=singtwo9 href=javascript:void(0)>9</a>
+ </div>
+ <div class="eg current" id=currenttwo10>
+ <a id=singtwo10 href=javascript:void(0)>10</a>
+ </div>
+ </div>
+ <div style=clear:both></div>
+ </div>
+ <div id=judgeD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=blankD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=answerD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=compositionD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=explainD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=analysisD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=readD style=display:none>
+ 
+ 
+ 
+ </div>
+ <div id=articleD style=display:none>
+ 
+ 
+ 
+ </div>
+ </div>
+ </div>
+ <div class=right style=height:85%>
+ <div class=radio_choice id=singleItem>单项选择题（共10道题，共50分）</div>
+ <div id=one0 style=height:auto>
+ <span>
+ 1、以下哪项属于重大案件的情形？
+ <img id=seePormot_single0 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single0 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、案件由外部审计发现</li> <li>B、涉案金额等值人民币500万元</li> <li>C、风险敞口金额占机构净资产5%</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、引发区域性系统性风险</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption0 type=radio value=35cce1b148644ba1b02c81261f6b246f class=seeGrade>A选项
+ <input autocomplete=off name=singleOption0 type=radio value=86df28ab84cc406e8d9f3331d22ca25c class=seeGrade>B选项
+ <input autocomplete=off name=singleOption0 type=radio value=a88a5fa7fbe041348293b96606e3c570 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption0 type=radio value=dd7f88db47bc48c98831ba4fd3040d3b class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one1 style=height:auto>
+ <span>
+ 2、各级农信机构承担本机构案件风险防控的（）责任。
+ <img id=seePormot_single1 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single1 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、主体</li> <li>B、直接</li> <li>C、管理</li> <li>D、主要</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption1 type=radio value=058d61c89dfb43c5bbac8e8fb277c65d class=seeGrade checked>A选项
+ <input autocomplete=off name=singleOption1 type=radio value=26e8f4aad5964a8ab53cb463b43e4f95 class=seeGrade>B选项
+ <input autocomplete=off name=singleOption1 type=radio value=bee4c4fd49f84bc0b8b453807cd59c11 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption1 type=radio value=d52aebc0287c4e139eb68704470bacd7 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one2 style=height:auto>
+ <span>
+ 3、各法人机构内设部门和分支机构应对其职责范围内的案件风险防控工作承担（）责任。
+ <img id=seePormot_single2 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single2 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、主体</li> <li>B、管理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、直接</li> <li>D、主要</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption2 type=radio value=6172fa1ed4724f12a833453417096e89 class=seeGrade>A选项
+ <input autocomplete=off name=singleOption2 type=radio value=79aefa3bca614f44bb5ab151de3e63f0 class=seeGrade>B选项
+ <input autocomplete=off name=singleOption2 type=radio value=881a08fdfadd4b8fa9f2d92e4a744668 class=seeGrade checked>C选项
+ <input autocomplete=off name=singleOption2 type=radio value=e2bb5cb7d49d4802a549e5354d68ef76 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one3 style=height:auto>
+ <span>
+ 4、各级农信机构应在举报处理制度中建立健全（）机制，有效甄别举报中反映的违法违规事项，及时采取措施处置和化解案件风险隐患。
+ <img id=seePormot_single3 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single3 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、案件风险线索查处</li> <li>B、案件风险线索排查</li> <li>C、案件风险线索举报</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、案件风险线索发现查处</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption3 type=radio value=0047bd62a5c04651a0ac9b63a48d289e class=seeGrade>A选项
+ <input autocomplete=off name=singleOption3 type=radio value=055381d5eeb545519ad4b00e9528f4a4 class=seeGrade>B选项
+ <input autocomplete=off name=singleOption3 type=radio value=1d7bf405141c489bb8850df08863cbac class=seeGrade>C选项
+ <input autocomplete=off name=singleOption3 type=radio value=6e4c642e8dc64bd187bd174d7f0c16f5 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one4 style=height:auto>
+ <span>
+ 5、县级法人机构（石家庄审计中心辖内除外）发生案件后，需在知悉后多少个工作日内报送《案件确认报告》？
+ <img id=seePormot_single4 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single4 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、2个工作日</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、3个工作日</li> <li>C、5个工作日</li> <li>D、1个工作日</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption4 type=radio value=0c89f10979d74227960b6ed9e10187ab class=seeGrade>A选项
+ <input autocomplete=off name=singleOption4 type=radio value=7854491460e84654acc3393f308095c1 class=seeGrade checked>B选项
+ <input autocomplete=off name=singleOption4 type=radio value=9de3801685e14632846928c91215afa4 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption4 type=radio value=cb9df6d387e541fe82062145666b4e8f class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one5 style=height:auto>
+ <span>
+ 6、重大案件的追责问责工作由哪一级机构负责？
+ <img id=seePormot_single5 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single5 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、上级机构分管领导</li> <li>B、案发机构</li> <li>C、属地监管部门</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、省联社</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption5 type=radio value=44cd23536a9a445887012b19fbe74944 class=seeGrade>A选项
+ <input autocomplete=off name=singleOption5 type=radio value=5b490af38a874642a599db24ac2d2130 class=seeGrade>B选项
+ <input autocomplete=off name=singleOption5 type=radio value=9fc7ed3bd9e643c8b4d81eed4998e2f0 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption5 type=radio value=dfe5a6c2f75f4fc5bed613e23744cd97 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one6 style=height:auto>
+ <span>
+ 7、各法人机构（）承担案件风险防控执行责任
+ <img id=seePormot_single6 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single6 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、案件风险防控牵头部门</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、高级管理层</li> <li>C、董（理）事会</li> <li>D、监事会</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption6 type=radio value=11c8ec745eab43eaaaf426c701d74cc5 class=seeGrade>A选项
+ <input autocomplete=off name=singleOption6 type=radio value=13df3eb6c0c94aee95c489c830c408ce class=seeGrade checked>B选项
+ <input autocomplete=off name=singleOption6 type=radio value=230cacd3e7834fcfb84dfe68b0c223cb class=seeGrade>C选项
+ <input autocomplete=off name=singleOption6 type=radio value=9f6e4164f817462bb004e462aea00bb5 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one7 style=height:auto>
+ <span>
+ 8、案件管理工作遵循的基本原则不包括以下哪一项？
+ <img id=seePormot_single7 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single7 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、集中统一处理</li> <li>B、机构为主</li> <li>C、属地监管</li> <li>D、分级负责</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption7 type=radio value=4b4d5a9e65804ccb91a7830de512f1b7 class=seeGrade checked>A选项
+ <input autocomplete=off name=singleOption7 type=radio value=5e3e96e412a94768bf13bf0ca2df0cf0 class=seeGrade>B选项
+ <input autocomplete=off name=singleOption7 type=radio value=6314d7d89a9f4ddfbb168a963fccd685 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption7 type=radio value=e93525a03bb84a2aaecc3dd54c0d01c6 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one8 style=height:auto>
+ <span>
+ 9、以下哪个是董（理）事会的主要职责
+ <img id=seePormot_single8 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single8 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、审议批准本机构案件风险防控相关制度，并监督检查执行情况</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、审议本机构年度案件风险防控评估等相关情况报告</li> <li>C、推动落实案件风险防控的各项监管要求</li> <li>D、统筹组织案件风险排查与处置、从业人员行为管理工作</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption8 type=radio value=aac61898daef466e9a2c718dcacf527b class=seeGrade>A选项
+ <input autocomplete=off name=singleOption8 type=radio value=af34a9e4e79d4a78a8f54ad960846d2e class=seeGrade checked>B选项
+ <input autocomplete=off name=singleOption8 type=radio value=dfdcd4c92a1945cf82f2f560e4e34382 class=seeGrade>C选项
+ <input autocomplete=off name=singleOption8 type=radio value=eb3687fff7b2475981621b6a61d3ee26 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=one9 style=height:auto>
+ <span>
+ 10、案发机构需在报送案件报告后多长时间内报送调查报告？
+ <img id=seePormot_single9 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_single9 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、6个月</li> <li>B、1年</li> <li>C、2年</li> <li>D、3个月</li> 
+ <li style=float:left;width:500px> <input autocomplete=off name=singleOption9 type=radio value=2d8309e21b29456b88b35598c4544b31 class=seeGrade checked>A选项
+ <input autocomplete=off name=singleOption9 type=radio value=5ae9e99f9b8c4fc09c46bbdaa79b0bab class=seeGrade>B选项
+ <input autocomplete=off name=singleOption9 type=radio value=e4306b8f39c047929b48af9f0f9ca5cc class=seeGrade>C选项
+ <input autocomplete=off name=singleOption9 type=radio value=f275abef463b431d8e3066ce6f1b7b92 class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div class=radio_choice id=multiItem>多项选择题（共10道题，共50分）</div>
+ <div id=two0 style=height:auto>
+ <span>
+ 1、案件审结报告需包含哪些内容？（多选）
+ <img id=seePormot_multi0 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi0 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、整改方案</li> <li>B、舆情管理措施</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、案件基本情况</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、追责问责结果</li> 
+ <li> <input name=multiOption0 type=checkbox value=079bb9e4d2de4f80ad9ac5138dea0725 class=seeGrade checked>A选项
+ <input name=multiOption0 type=checkbox value=0fa3748616b248febe959f56721c531b class=seeGrade>B选项
+ <input name=multiOption0 type=checkbox value=5a095e8ba7c04c88b692008bb0f10a2c class=seeGrade checked>C选项
+ <input name=multiOption0 type=checkbox value=daeed7e0527c4f90a6c528fedce6aa7f class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two1 style=height:auto>
+ <span>
+ 2、各级农信机构在内部监督检查制度中应建立健全监督和检查案件风险防控的相关机制，组织开展相关条线和各级机构案件风险防控内部监督检查，并重点加大对（）的监督检查力度。
+ <img id=seePormot_multi1 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi1 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、基层网点</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、案件易发部位</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、薄弱环节</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、关键岗位</li> 
+ <li> <input name=multiOption1 type=checkbox value=3ee25b5290754d2bb9f82606a2a183f3 class=seeGrade checked>A选项
+ <input name=multiOption1 type=checkbox value=544dd7d102274f4e91c794a2c057e403 class=seeGrade checked>B选项
+ <input name=multiOption1 type=checkbox value=a7a6862867ab4931b94a814fbf3dc785 class=seeGrade checked>C选项
+ <input name=multiOption1 type=checkbox value=fe0e762b627843cd91ee62f02e89fbca class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two2 style=height:auto>
+ <span>
+ 3、各法人机构应不断提高内部控制有效性，持续完善案件风险防控重点措施，确保案件风险整体可控,包括但不限于（）等。
+ <img id=seePormot_multi2 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi2 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、账户对账和异常交易账户管理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、股东股权和关联交易管理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、重要印章凭证管理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、重要岗位轮岗和强制休假管理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>E、分级授权体系和权限管理</li> 
+ <li> <input name=multiOption2 type=checkbox value=09b0ed0d0a6b439698cae27d82ca2c53 class=seeGrade checked>A选项
+ <input name=multiOption2 type=checkbox value=1653aae9d9b54271bf9d4669c32a0bc5 class=seeGrade checked>B选项
+ <input name=multiOption2 type=checkbox value=39545cfe6395402283a0611d024a4db5 class=seeGrade checked>C选项
+ <input name=multiOption2 type=checkbox value=8e573591017040999827e6874b8f510f class=seeGrade checked>D选项
+ <input name=multiOption2 type=checkbox value=cb24c0f238df4a6fa2dd809eaec909e6 class=seeGrade checked>E选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two3 style=height:auto>
+ <span>
+ 4、各级农信机构应建立健全案件风险防控机制，构建起覆盖案件风险排查与处置、（）追责问责、问题整改、举报处理、考核奖励、培训教育等环节的全链条防控体系。
+ <img id=seePormot_multi3 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi3 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、领导干部监督</li> <li>B、案件查处报送</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、内部监督检查</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、从业人员行为管理</li> 
+ <li> <input name=multiOption3 type=checkbox value=4a7fc20d75244113bc7af00a11031306 class=seeGrade checked>A选项
+ <input name=multiOption3 type=checkbox value=6350ed514e644dcd9c225a64546bab5b class=seeGrade>B选项
+ <input name=multiOption3 type=checkbox value=8f37a2b2e0574435911556250ff07830 class=seeGrade checked>C选项
+ <input name=multiOption3 type=checkbox value=f01aeea4e4574e7dad262f9ba0eb8794 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two4 style=height:auto>
+ <span>
+ 5、案件风险防控遵循以下原则：（）
+ <img id=seePormot_multi4 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi4 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、联防联控、各司其职</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、法人主责、分级负责</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、全面覆盖、突出重点</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、预防为主、关口前移</li> 
+ <li> <input name=multiOption4 type=checkbox value=29643525b21a43abb663b5524dafa5eb class=seeGrade checked>A选项
+ <input name=multiOption4 type=checkbox value=826bc1f9cb144a7bb017dc9f29e5ce39 class=seeGrade checked>B选项
+ <input name=multiOption4 type=checkbox value=bc3f8f6042df4e1282f02e1437c5d7e1 class=seeGrade checked>C选项
+ <input name=multiOption4 type=checkbox value=c9f4dd801f264426a06d191ccc3fc174 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two5 style=height:auto>
+ <span>
+ 6、案件撤销的情形包括哪些？（多选）
+ <img id=seePormot_multi5 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi5 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、公安撤案</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、法院判决无罪</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、监管部门核查不符合案件定义</li> <li>D、案件风险事件未升级</li> 
+ <li> <input name=multiOption5 type=checkbox value=04dd796edec74236ae38c2a8043256df class=seeGrade checked>A选项
+ <input name=multiOption5 type=checkbox value=53133a3a370743af8874b9d7fab83073 class=seeGrade checked>B选项
+ <input name=multiOption5 type=checkbox value=66408a0993af454ea3bb05edebd5c9be class=seeGrade checked>C选项
+ <input name=multiOption5 type=checkbox value=c948fce406fa4111bdb6aaa0924e849f class=seeGrade>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two6 style=height:auto>
+ <span>
+ 7、案发机构在案件处置中需承担哪些职责？（多选）
+ <img id=seePormot_multi6 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi6 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、报送案件信息</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、对责任人员追责问责</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、开展涉案业务调查</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、制定整改方案</li> 
+ <li> <input name=multiOption6 type=checkbox value=0b8815288a274a938328d69e92431d28 class=seeGrade checked>A选项
+ <input name=multiOption6 type=checkbox value=547d9804e58f45dcb09a712446d3ca7d class=seeGrade checked>B选项
+ <input name=multiOption6 type=checkbox value=9b7873939a214d6a980bee3a46037ef8 class=seeGrade checked>C选项
+ <input name=multiOption6 type=checkbox value=e28ddc1f6db243eca8098442ccfeb355 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two7 style=height:auto>
+ <span>
+ 8、确定案件报送主体时需考虑哪些因素？（多选）
+ <img id=seePormot_multi7 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi7 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、业务经办机构</li> <li>B、案件发生时间</li> <li>C、案件是否自查发现</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、涉案人员作案时的身份</li> 
+ <li> <input name=multiOption7 type=checkbox value=6a8717f356cc450597cda56877fb6e2d class=seeGrade checked>A选项
+ <input name=multiOption7 type=checkbox value=7246776208564e729523ad755a16c09b class=seeGrade>B选项
+ <input name=multiOption7 type=checkbox value=d244c11d7c434277abf9e8eed27a529e class=seeGrade>C选项
+ <input name=multiOption7 type=checkbox value=ee2db2af6f7f43849c811e235a50458c class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two8 style=height:auto>
+ <span>
+ 9、以下哪些情形属于案件风险事件？（多选）
+ <img id=seePormot_multi8 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi8 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li>A、案件已由法院判决无罪</li> <li>B、从业人员利用职务便利侵犯客户权益且已立案</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、从业人员被立案调查但未确定是否与业务相关</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、机构向公安机关报案但未立案</li> 
+ <li> <input name=multiOption8 type=checkbox value=60536cf6f1bc44198c77a0ab12c7dd7e class=seeGrade>A选项
+ <input name=multiOption8 type=checkbox value=be9577bd05644b23bbb677d67ae7544a class=seeGrade>B选项
+ <input name=multiOption8 type=checkbox value=e4a1e9741df84c26b1d3cc29013ea3f8 class=seeGrade checked>C选项
+ <input name=multiOption8 type=checkbox value=ef2c52e32d8a4949a947b66342b0aa04 class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div id=two9 style=height:auto>
+ <span>
+ 10、各法人机构应制定案件风险排查与处置制度，确定案件风险排查的范围、内容、频率等事项，建立健全（）等关键环节的常态化风险排查与处置机制。
+ <img id=seePormot_multi9 class=promotImg style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=查看解答提示> <img id=collectQuestion_multi9 class=collectQuestion style=margin-left:10px;float:right;margin-right:5%;display:none src=data:, title=收藏>
+ </span>
+ 
+ <ul>
+ <li style=background-color:rgb(255,255,0);font-weight:bold>A、客户准入</li> <li style=background-color:rgb(255,255,0);font-weight:bold>B、决策审批</li> <li style=background-color:rgb(255,255,0);font-weight:bold>C、业务处理</li> <li style=background-color:rgb(255,255,0);font-weight:bold>D、岗位准入</li> 
+ <li> <input name=multiOption9 type=checkbox value=3b46f805f79d402fb279f52650180cae class=seeGrade checked>A选项
+ <input name=multiOption9 type=checkbox value=7c4759213e324e4bae7abd2f3a22e3ff class=seeGrade checked>B选项
+ <input name=multiOption9 type=checkbox value=83e8863d421d4deba49a134313d8d755 class=seeGrade checked>C选项
+ <input name=multiOption9 type=checkbox value=8bdc75ce4e1246c5b127773e1607fadc class=seeGrade checked>D选项
+ </li>
+ </ul>
+ <div class="zongjie Height">
+ 
+ </div>
+ </div>
+ <div class=radio_choice id=judgeItem style=display:none>判断题（共0道题，共0分）</div>
+ <div style=clear:both></div>
+ <div class=radio_choice id=blankItem style=display:none>填空题（共0道题，共0分）</div>
+ <div class=radio_choice id=answerItem style=display:none>问答题（共0道题，共0分）</div>
+ <div class=radio_choice id=compositionItem style=display:none>作文题（共0道题，共0分）</div>
+ <div class=radio_choice id=explainItem style=display:none>名词解释（共0道题，共0分）</div>
+ <div class=radio_choice id=analysisItem style=display:none>案例分析（共0道题，共0分）</div>
+ <div class=radio_choice id=readItem style=display:none>阅读题（共0道题，共0分）</div>
+ <div class=radio_choice id=articleItem style=display:none>文章推理题（共0道题，共分）</div>
+ </div>
+<div id=allow_copycopy-2076e194124e2936e3b3d29ff98f2c4e><div class=allow_copy_content style=top:0px;left:0px;display:none></div></div><div class=xl-chrome-ext-bar_4DB361DE-01F7-4376-B494-639E489D19ED id=xl_chrome_ext_4DB361DE-01F7-4376-B494-639E489D19ED data-v-app style=display:block><div><div id=xl_chrome_ext_video_tag_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED config="[object Object]" uiversion=v2 exception=false latestvideosrc isshowvideotag=false isshowdownloadbar=true isshowcloudaddbar=false latestvideoelement><div><div class=_video_op_wrapper_mpbxe_1 config="[object Object]" uiversion=v2 style=display:none></div></div></div><div class="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED _badge_wrapper_eor63_1 sf-hidden" id=badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED></div></div></div>
