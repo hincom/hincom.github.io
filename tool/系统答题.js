@@ -236,10 +236,15 @@
                             checkboxes.forEach(checkbox => {
                                 if (checkbox.nextSibling &&
                                     checkbox.nextSibling.textContent.trim() === `${optionLetter}选项`) {
-                                    checkbox.checked = true;
+                                    //checkbox.checked = true;
+                                    //必须使用两次click()
+                                    checkbox.click();
+                                    checkbox.click();
                                     //console.log(`已勾选问题${i+1}的正确选项: ${optionLetter}`);
                                 }
+
                             });
+
                         }
                     });
                 }
