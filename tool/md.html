@@ -102,6 +102,7 @@ lintMarkdown(markdownContent); // 实时检测 Markdown
                 const options = {
                     strings: { content: content }, // 要检测的内容
                     config: { "MD013": false }, // 禁用 MD013（行长度限制），避免频繁报错
+                    config: { "MD041": false },// 禁用 MD041（），避免频繁报错
                     handleRuleFailures: true // 允许处理规则错误
                 };
 
