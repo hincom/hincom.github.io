@@ -107,6 +107,10 @@
           // renderViolations(allLintErrors); // 渲染错误列表
           var fixed = markdownlint.applyFixes(content, allLintErrors);
           testEditor.setMarkdown(fixed);
+          var cm = testEditor.codemirror; 
+var cursor = cm.getCursor(); 
+var line = cursor.line; 
+           console.log(line);
           console.log(allLintErrors);
         }
 
