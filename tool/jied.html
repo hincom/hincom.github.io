@@ -31,6 +31,10 @@
             .transition-all-300 {
                 transition: all 300ms ease-in-out;
             }
+            .highlight {
+                background-color: rgba(59, 130, 246, 0.1);
+                border-left: 3px solid #3B82F6;
+            }
         }
     </style>
 </head>
@@ -55,6 +59,14 @@
 
     <!-- 主要内容 -->
     <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- 移动端复制提示 -->
+        <div class="bg-blue-50 border border-blue-200 p-3 rounded-md mb-6 md:hidden">
+            <p class="text-sm text-blue-700 flex items-center">
+                <i class="fa fa-lightbulb-o mr-2"></i>
+                提示：长按链接可手动复制，点击复制按钮更快捷
+            </p>
+        </div>
+
         <!-- 状态提示 -->
         <div id="status-alert" class="mb-6 p-4 rounded-md bg-blue-50 border border-blue-200 hidden">
             <div class="flex items-start">
@@ -79,9 +91,9 @@
                     </button>
                 </li>
                 <li role="presentation">
-                    <button id="about-tab" class="inline-block p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" 
-                            data-tab="about-content" role="tab">
-                        <i class="fa fa-info-circle mr-1"></i>关于
+                    <button id="help-tab" class="inline-block p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" 
+                            data-tab="help-content" role="tab">
+                        <i class="fa fa-question-circle mr-1"></i>帮助
                     </button>
                 </li>
             </ul>
@@ -129,26 +141,45 @@
                 </div>
             </div>
 
-            <!-- 关于 -->
-            <div id="about-content" class="tab-pane hidden">
+            <!-- 帮助内容 -->
+            <div id="help-content" class="tab-pane hidden">
                 <div class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-lg font-semibold mb-4">关于本页面</h2>
-                    <div class="space-y-4 text-sm">
-                        <p>本页面展示每日自动更新的Clash和V2Ray配置链接。</p>
-                        
-                        <div class="p-4 bg-blue-50 rounded-md border border-blue-100">
-                            <h3 class="font-medium text-blue-800 mb-2">功能说明</h3>
-                            <ul class="list-disc pl-5 space-y-1 text-blue-700">
-                                <li>自动获取每日更新的配置链接</li>
-                                <li>分类展示Clash和V2Ray的URL列表</li>
-                                <li>支持复制单个URL或所有URL</li>
-                                <li>可手动刷新获取最新内容</li>
-                            </ul>
+                    <h2 class="text-lg font-semibold mb-4">复制功能帮助</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-medium text-primary mb-2">如何复制链接？</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="p-3 bg-gray-50 rounded-md">
+                                <p class="font-medium">方法一：使用复制按钮（推荐）</p>
+                                <p>1. 点击每个链接右侧的 <i class="fa fa-copy text-gray-500"></i> 按钮复制单个链接</p>
+                                <p>2. 点击列表上方的「复制所有URL」按钮复制全部链接</p>
+                            </div>
+                            
+                            <div class="p-3 bg-gray-50 rounded-md">
+                                <p class="font-medium">方法二：手动复制（适用于按钮无法使用时）</p>
+                                <p>1. 长按需要复制的链接文本</p>
+                                <p>2. 拖动选择框覆盖完整链接</p>
+                                <p>3. 点击弹出菜单中的「复制」或「拷贝」选项</p>
+                            </div>
                         </div>
-                        
-                        <div>
-                            <h3 class="font-medium mb-2">更新说明</h3>
-                            <p>系统每天自动更新一次配置链接，确保您获取到最新的可用配置。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-primary mb-2">常见问题解决</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="p-3 highlight rounded-md">
+                                <p class="font-medium">提示"复制失败"怎么办？</p>
+                                <p>1. 请尝试使用「手动复制」方法</p>
+                                <p>2. 检查浏览器是否处于"无痕模式"，切换到普通模式重试</p>
+                                <p>3. 确保浏览器已获得剪贴板权限（手机设置 → 应用管理 → 浏览器 → 权限 → 允许剪贴板）</p>
+                            </div>
+                            
+                            <div class="p-3 bg-gray-50 rounded-md">
+                                <p class="font-medium">链接无法加载怎么办？</p>
+                                <p>1. 点击页面顶部的「刷新」按钮重试</p>
+                                <p>2. 检查网络连接后再试</p>
+                                <p>3. 稍后再次访问，链接可能正在更新中</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,6 +199,9 @@
     <div id="notification" class="fixed bottom-5 right-5 p-4 rounded-md shadow-lg transform translate-y-20 opacity-0 transition-all-300 hidden">
         <p id="notification-text" class="text-sm"></p>
     </div>
+
+    <!-- 临时文本框（用于降级复制方案） -->
+    <textarea id="temp-copy-area" style="position:absolute;top:-1000px;opacity:0;"></textarea>
 
     <script>
         // 当前日期处理
@@ -263,9 +297,10 @@
                 li.className = 'flex items-start p-2 border border-gray-100 rounded hover:bg-gray-50 transition-all-300';
                 li.innerHTML = `
                     <span class="text-gray-500 mr-3 mt-0.5">${index + 1}.</span>
-                    <div class="flex-grow break-all">${url}</div>
+                    <div class="flex-grow break-all select-all">${url}</div>
                     <button class="copy-single ml-2 text-gray-400 hover:text-primary transition-all-300" 
-                            data-url="${url}">
+                            data-url="${url}" 
+                            aria-label="复制此链接">
                         <i class="fa fa-copy"></i>
                     </button>
                 `;
@@ -277,17 +312,70 @@
                 btn.addEventListener('click', (e) => {
                     const url = e.currentTarget.getAttribute('data-url');
                     copyToClipboard(url);
-                    showNotification('URL已复制到剪贴板');
                 });
             });
         };
         
-        // 复制到剪贴板
+        // 复制到剪贴板（兼容优化版）
         const copyToClipboard = (text) => {
-            navigator.clipboard.writeText(text).catch(err => {
-                console.error('无法复制内容:', err);
-                showNotification('复制失败，请手动复制', 'error');
-            });
+            // 方案1：现代浏览器Clipboard API（HTTPS环境）
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        showNotification('复制成功！');
+                    })
+                    .catch(err => {
+                        console.error('Clipboard API失败:', err);
+                        // 失败时降级到方案2
+                        fallbackCopy(text);
+                    });
+            } 
+            // 方案2：降级方案（兼容HTTP和旧浏览器）
+            else {
+                fallbackCopy(text);
+            }
+        };
+        
+        // 降级复制方案：使用textarea和execCommand
+        const fallbackCopy = (text) => {
+            // 获取隐藏的临时文本框
+            const tempArea = document.getElementById('temp-copy-area');
+            tempArea.value = text;
+            
+            // 选中文本（适配移动端）
+            tempArea.focus();
+            tempArea.setSelectionRange(0, text.length);
+            
+            try {
+                // 执行复制命令
+                const success = document.execCommand('copy');
+                if (success) {
+                    showNotification('复制成功！');
+                } else {
+                    throw new Error('execCommand返回失败');
+                }
+            } catch (err) {
+                console.error('降级复制失败:', err);
+                // 引导用户手动复制
+                showNotification('请长按文本手动复制', 'error');
+                // 选中对应元素的文本，方便用户直接复制
+                selectTextByValue(text);
+            }
+        };
+        
+        // 自动选中页面中对应的文本（辅助手动复制）
+        const selectTextByValue = (text) => {
+            const elements = document.querySelectorAll('.select-all');
+            for (let el of elements) {
+                if (el.textContent.trim() === text.trim()) {
+                    const range = document.createRange();
+                    range.selectNodeContents(el);
+                    const selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                    break;
+                }
+            }
         };
         
         // 显示通知
@@ -318,11 +406,6 @@
                     alert.classList.add('hidden');
                 }, duration);
             }
-        };
-        
-        // 隐藏状态提示
-        const hideStatus = () => {
-            document.getElementById('status-alert').classList.add('hidden');
         };
         
         // 初始化页面
@@ -365,14 +448,12 @@
             document.getElementById('copy-clash').addEventListener('click', () => {
                 const urls = generateUrls(clashTemplates);
                 copyToClipboard(urls.join('\n'));
-                showNotification('所有Clash URL已复制到剪贴板');
             });
             
             // 复制所有V2Ray URL
             document.getElementById('copy-v2ray').addEventListener('click', () => {
                 const urls = generateUrls(v2rayTemplates);
                 copyToClipboard(urls.join('\n'));
-                showNotification('所有V2Ray URL已复制到剪贴板');
             });
             
             // 刷新按钮
@@ -388,6 +469,11 @@
                 updateTimeDisplay();
                 showStatus('内容已刷新', 2000);
             });
+            
+            // 检查浏览器环境并提示
+            if (!window.isSecureContext && window.location.protocol !== 'https:') {
+                showStatus('注意：非HTTPS环境下复制功能可能受限，建议使用手动复制', 5000);
+            }
         };
         
         // 页面加载完成后初始化
